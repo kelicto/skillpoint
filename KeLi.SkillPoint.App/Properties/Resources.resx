@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Apples" xml:space="preserve">
+    <value>Apples</value>
+  </data>
+  <data name="ApplesNode" xml:space="preserve">
+    <value>&lt;Apples xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema""&gt;</value>
+  </data>
+  <data name="ApplesNodeEnd" xml:space="preserve">
+    <value>&lt;/Apples&gt;</value>
+  </data>
+  <data name="ArrayOfAppleNode" xml:space="preserve">
+    <value>&lt;ArrayOfApple xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema""&gt;</value>
+  </data>
+  <data name="ArrayOfAppleNodeEnd" xml:space="preserve">
+    <value>&lt;/ArrayOfApple&gt;</value>
+  </data>
+  <data name="BigEndian" xml:space="preserve">
+    <value>Big Endian</value>
+  </data>
+  <data name="ConfigPath" xml:space="preserve">
+    <value>KeLi.SkillPoint.ConsoleApp.exe.config</value>
+  </data>
+  <data name="ConnectLog" xml:space="preserve">
+    <value>ConnectLog</value>
+  </data>
+  <data name="ConnStrKeyName" xml:space="preserve">
+    <value>ConnSql</value>
+  </data>
+  <data name="ConnStrValueName" xml:space="preserve">
+    <value>connectionStrings</value>
+  </data>
+  <data name="CrErrorConnStr" xml:space="preserve">
+    <value>Server=.;DataBase=StudentMgt;Uid=sa;Pwd=123789</value>
+  </data>
+  <data name="CrRightConnStr" xml:space="preserve">
+    <value>Server=.;DataBase=StudentMgt;Uid=sa;Pwd=123456</value>
+  </data>
+  <data name="Denny" xml:space="preserve">
+    <value>Denny</value>
+  </data>
+  <data name="ExactPartTimeFormat" xml:space="preserve">
+    <value>mm:ss.ffff</value>
+  </data>
+  <data name="HashCodeTest" xml:space="preserve">
+    <value>123456789</value>
+  </data>
+  <data name="Jack" xml:space="preserve">
+    <value>Jack</value>
+  </data>
+  <data name="Jim" xml:space="preserve">
+    <value>Jim</value>
+  </data>
+  <data name="John" xml:space="preserve">
+    <value>John</value>
+  </data>
+  <data name="Juan" xml:space="preserve">
+    <value>Juan</value>
+  </data>
+  <data name="LittleEndian" xml:space="preserve">
+    <value>Little Endian</value>
+  </data>
+  <data name="Mike" xml:space="preserve">
+    <value>Mike</value>
+  </data>
+  <data name="Nino" xml:space="preserve">
+    <value>Nino</value>
+  </data>
+  <data name="NumSum" xml:space="preserve">
+    <value>All Num Sum: </value>
+  </data>
+  <data name="Phil" xml:space="preserve">
+    <value>Phil</value>
+  </data>
+  <data name="PuFormula1" xml:space="preserve">
+    <value>(int)1.1/1.0={0}</value>
+  </data>
+  <data name="PuFormula2" xml:space="preserve">
+    <value>(int)(1.1/1.0)={0}</value>
+  </data>
+  <data name="PuHigh" xml:space="preserve">
+    <value>Result: Casting priority than arithmetic precedence.</value>
+  </data>
+  <data name="PuLow" xml:space="preserve">
+    <value>Result: Casting priority precedence than the arithmetic operation.</value>
+  </data>
+  <data name="QueryStudentSql" xml:space="preserve">
+    <value>SELECT * FROM StudentInfo</value>
+  </data>
+  <data name="StackMsg" xml:space="preserve">
+    <value>Stack: </value>
+  </data>
+  <data name="StudentInfo" xml:space="preserve">
+    <value>StudentInfo</value>
+  </data>
+  <data name="SuNo" xml:space="preserve">
+    <value>No{0}</value>
+  </data>
+  <data name="SuTime" xml:space="preserve">
+    <value>{0} goes to the bathroom, the time is: {1}</value>
+  </data>
+  <data name="TimeFormat" xml:space="preserve">
+    <value>yyyy-MM-dd-HH-mm</value>
+  </data>
+  <data name="TimePass" xml:space="preserve">
+    <value>Time passes...</value>
+  </data>
+  <data name="XsdKey" xml:space="preserve">
+    <value>xsd</value>
+  </data>
+  <data name="XsdValue" xml:space="preserve">
+    <value>http://www.w3.org/2001/XMLSchema</value>
+  </data>
+  <data name="XsiKey" xml:space="preserve">
+    <value>xsi</value>
+  </data>
+  <data name="XsiValue" xml:space="preserve">
+    <value>http://www.w3.org/2001/XMLSchema-instance</value>
+  </data>
+  <data name="Hello" xml:space="preserve">
+    <value>Hello</value>
+  </data>
+  <data name="HelloWorld" xml:space="preserve">
+    <value>Hello World</value>
+  </data>
+  <data name="NotInterned" xml:space="preserve">
+    <value>Not Interned</value>
+  </data>
+  <data name="World" xml:space="preserve">
+    <value>World</value>
+  </data>
+</root>

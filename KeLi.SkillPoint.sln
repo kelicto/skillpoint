@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28729.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeLi.SkillPoint.App", "KeLi.SkillPoint.App\KeLi.SkillPoint.App.csproj", "{99512AFF-F7B1-418B-A217-CEFCFB722AF5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99512AFF-F7B1-418B-A217-CEFCFB722AF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99512AFF-F7B1-418B-A217-CEFCFB722AF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99512AFF-F7B1-418B-A217-CEFCFB722AF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99512AFF-F7B1-418B-A217-CEFCFB722AF5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {54768059-518B-4709-9368-F1E1D9E092A1}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{99512AFF-F7B1-418B-A217-CEFCFB722AF5}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KeLi.SkillPoint.App</RootNamespace>
+    <AssemblyName>KeLi.SkillPoint.App</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;CONDITION</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;CONDITION</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Arithmetic\DataExchange.cs" />
+    <Compile Include="Arithmetic\GroupingUsage.cs" />
+    <Compile Include="Arithmetic\LineRelationship.cs" />
+    <Compile Include="Arithmetic\NumPyramid.cs" />
+    <Compile Include="Arithmetic\NumSum.cs" />
+    <Compile Include="Common\RegexUtil.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Syntax\BitOperator.cs" />
+    <Compile Include="Syntax\DynamicDictionary.cs" />
+    <Compile Include="Syntax\ListStruct.cs" />
+    <Compile Include="Thinking\ConfigRw.cs" />
+    <Compile Include="Syntax\PropertyStudy.cs" />
+    <Compile Include="Thinking\LinqThinking.cs" />
+    <Compile Include="Thinking\DtLoading.cs" />
+    <Compile Include="Thinking\LogUsage.cs" />
+    <Compile Include="Syntax\CustomerFormat.cs" />
+    <Compile Include="Syntax\DelegateTest.cs" />
+    <Compile Include="Syntax\FuncDelegation.cs" />
+    <Compile Include="Syntax\HashcodeUsage.cs" />
+    <Compile Include="Syntax\JsonUsage.cs" />
+    <Compile Include="Syntax\OperatorUsage.cs" />
+    <Compile Include="Syntax\ParameterType.cs" />
+    <Compile Include="Syntax\SemaphoreUsage.cs" />
+    <Compile Include="Syntax\XmlUsage.cs" />
+    <Compile Include="Thinking\EndianUsage.cs" />
+    <Compile Include="Thinking\FibonacciSequence.cs" />
+    <Compile Include="Thinking\LoopUsage.cs" />
+    <Compile Include="Thinking\PathUtil.cs" />
+    <Compile Include="Thinking\PriorityUsage.cs" />
+    <Compile Include="Thinking\TeacherData.cs" />
+    <Compile Include="Thinking\UvSort.cs" />
+    <Compile Include="Thinking\XyzThinking.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Data\StudentInfo.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\StudentInfo.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

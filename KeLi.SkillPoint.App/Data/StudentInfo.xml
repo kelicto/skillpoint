@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<StudentInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="StudentInfo.xsd">
+  <StuInfoGuid>F4396426-A9E4-45A2-8D0C-5A7F568EB836</StuInfoGuid>
+  <StuId>1201110101</StuId>
+  <StuName>Jack</StuName>
+  <Sex>Male</Sex>
+  <Phone>13889785678</Phone>
+</StudentInfo>
