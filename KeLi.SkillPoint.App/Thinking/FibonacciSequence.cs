@@ -1,14 +1,15 @@
 ﻿using System;
+using System.Numerics;
 
 namespace KeLi.SkillPoint.App.Thinking
 {
     /// <summary>
-    /// Fibonacci sequence.
+    ///     Fibonacci sequence.
     /// </summary>
     public class FibonacciSequence
     {
         /// <summary>
-        /// Shows the result.
+        ///     Shows the result.
         /// </summary>
         public static void ShowResult()
         {
@@ -28,7 +29,7 @@ namespace KeLi.SkillPoint.App.Thinking
         }
 
         /// <summary>
-        /// f(n-1)+f(n-2)=f(n)(n>=3)
+        ///     f(n-1)+f(n-2)=f(n)(n>=3)
         /// </summary>
         private static void ShowBase1()
         {
@@ -37,7 +38,7 @@ namespace KeLi.SkillPoint.App.Thinking
         }
 
         /// <summary>
-        /// f(n-1)+f(n-2)=f(n)(n>=2)
+        ///     f(n-1)+f(n-2)=f(n)(n>=2)
         /// </summary>
         private static void ShowBase2()
         {
@@ -46,7 +47,7 @@ namespace KeLi.SkillPoint.App.Thinking
         }
 
         /// <summary>
-        /// 1/√5[((1+√5)/2)^2-((1-√5)/2)^2]=f(n)(n>=0)
+        ///     1/√5[((1+√5)/2)^2-((1-√5)/2)^2]=f(n)(n>=0)
         /// </summary>
         private static void ShowBase3()
         {
@@ -55,7 +56,7 @@ namespace KeLi.SkillPoint.App.Thinking
         }
 
         /// <summary>
-        /// f(0)+f(1)+f(2)+...+f(n)=f(n+2)-1(n>=0)
+        ///     f(0)+f(1)+f(2)+...+f(n)=f(n+2)-1(n>=0)
         /// </summary>
         private static void ShowFeature1()
         {
@@ -64,7 +65,7 @@ namespace KeLi.SkillPoint.App.Thinking
         }
 
         /// <summary>
-        /// f(1)+f(3)+f(5)+...+f(2n-1)=f(2n)(n>=1)
+        ///     f(1)+f(3)+f(5)+...+f(2n-1)=f(2n)(n>=1)
         /// </summary>
         private static void ShowFeature2()
         {
@@ -73,7 +74,7 @@ namespace KeLi.SkillPoint.App.Thinking
         }
 
         /// <summary>
-        /// f(2)+f(4)+f(6)+...+f(2n)=f(2n+1)-1(n>=1)
+        ///     f(2)+f(4)+f(6)+...+f(2n)=f(2n+1)-1(n>=1)
         /// </summary>
         private static void ShowFeature3()
         {
@@ -82,7 +83,7 @@ namespace KeLi.SkillPoint.App.Thinking
         }
 
         /// <summary>
-        /// [f(0)]^2+[f(1)]^2+...+[f(n)]^2=f(n)·f(n+1)(n>=0)
+        ///     [f(0)]^2+[f(1)]^2+...+[f(n)]^2=f(n)·f(n+1)(n>=0)
         /// </summary>
         private static void ShowFeature4()
         {
@@ -91,7 +92,7 @@ namespace KeLi.SkillPoint.App.Thinking
         }
 
         /// <summary>
-        /// f(0)-f(1)+f(2)-...+(-1)^n·f(n)=(-1)^n·[f(n+1)-f(n)]+1(n>=0)
+        ///     f(0)-f(1)+f(2)-...+(-1)^n·f(n)=(-1)^n·[f(n+1)-f(n)]+1(n>=0)
         /// </summary>
         private static void ShowFeature5()
         {
@@ -100,7 +101,7 @@ namespace KeLi.SkillPoint.App.Thinking
         }
 
         /// <summary>
-        /// f(m-1)·f(n-1)+f(m)·f(n)=f(m+n)(m>=1,n>=1)
+        ///     f(m-1)·f(n-1)+f(m)·f(n)=f(m+n)(m>=1,n>=1)
         /// </summary>
         private static void ShowFeature6()
         {
@@ -109,7 +110,7 @@ namespace KeLi.SkillPoint.App.Thinking
         }
 
         /// <summary>
-        /// (-1)^(n-1)+f(n-1)·f(n+1)=[f(n)]^2(n>=1)
+        ///     (-1)^(n-1)+f(n-1)·f(n+1)=[f(n)]^2(n>=1)
         /// </summary>
         private static void ShowFeature7()
         {
@@ -118,7 +119,7 @@ namespace KeLi.SkillPoint.App.Thinking
         }
 
         /// <summary>
-        /// [f(n)]^2-[f(n-2)]^2=f(2n-1)(n>=2)
+        ///     [f(n)]^2-[f(n-2)]^2=f(2n-1)(n>=2)
         /// </summary>
         private static void ShowFeature8()
         {
@@ -127,7 +128,7 @@ namespace KeLi.SkillPoint.App.Thinking
         }
 
         /// <summary>
-        /// f(n+2)+f(n-2)=3f(n)(n>=2)
+        ///     f(n+2)+f(n-2)=3f(n)(n>=2)
         /// </summary>
         private static void ShowFeature9()
         {
@@ -136,7 +137,7 @@ namespace KeLi.SkillPoint.App.Thinking
         }
 
         /// <summary>
-        /// f(2n-2m-2)[f(2n)+f(2n+2)]=f(2m+2)+f(4n-2m)(n>m>=-1,n>=1)
+        ///     f(2n-2m-2)[f(2n)+f(2n+2)]=f(2m+2)+f(4n-2m)(n>m>=-1,n>=1)
         /// </summary>
         private static void ShowFeature10()
         {
@@ -145,20 +146,28 @@ namespace KeLi.SkillPoint.App.Thinking
         }
 
         /// <summary>
-        /// f(n-1)+f(n-2)=f(n)(n>=3)
+        ///     f(n-1)+f(n-2)=f(n)(n>=2)
         /// </summary>
         /// <param name="index"></param>
         /// <returns></returns>
-        public static double GetBase1(int index)
+        public static BigInteger GetBase1(int index)
         {
-            if (index == 1 || index == 2)
-                return 1;
+            BigInteger result = 0;
+            BigInteger first = 1;
+            BigInteger second = 1;
 
-            return GetBase1(index - 1) + GetBase1(index - 2);
+            for (var i = 2; i < index; ++i)
+            {
+                result = first + second;
+                first = second;
+                second = result;
+            }
+
+            return result;
         }
 
         /// <summary>
-        /// f(n-1)+f(n-2)=f(n)(n>=2)
+        ///     f(n-1)+f(n-2)=f(n)(n>=2)
         /// </summary>
         /// <param name="index"></param>
         /// <returns></returns>
@@ -171,17 +180,17 @@ namespace KeLi.SkillPoint.App.Thinking
         }
 
         /// <summary>
-        /// 1/√5[((1+√5)/2)^2-((1-√5)/2)^2]=f(n)(n>=0)
+        ///     1/√5[((1+√5)/2)^n-((1-√5)/2)^n]=f(n)(n>=0)
         /// </summary>
         /// <param name="index"></param>
         /// <returns></returns>
         public static double GetBase3(int index)
         {
-            return 1/Math.Sqrt(5)*(Math.Pow((1 + Math.Sqrt(5))/2, index) - Math.Pow((1 - Math.Sqrt(5))/2, index));
+            return 1 / Math.Sqrt(5) * (Math.Pow((1 + Math.Sqrt(5)) / 2, index) - Math.Pow((1 - Math.Sqrt(5)) / 2, index));
         }
 
         /// <summary>
-        /// f(0)+f(1)+f(2)+...+f(n)=f(n+2)-1(n>=0)
+        ///     f(0)+f(1)+f(2)+...+f(n)=f(n+2)-1(n>=0)
         /// </summary>
         /// <param name="index"></param>
         /// <returns></returns>
@@ -196,7 +205,7 @@ namespace KeLi.SkillPoint.App.Thinking
         }
 
         /// <summary>
-        /// f(1)+f(3)+f(5)+...+f(2n-1)=f(2n)(n>=1)
+        ///     f(1)+f(3)+f(5)+...+f(2n-1)=f(2n)(n>=1)
         /// </summary>
         /// <param name="index"></param>
         /// <returns></returns>
@@ -205,13 +214,13 @@ namespace KeLi.SkillPoint.App.Thinking
             double result = 0;
 
             for (var i = 1; i <= index; i++)
-                result += GetBase1(2*i - 1);
+                result += GetBase2(2 * i - 1);
 
             return result;
         }
 
         /// <summary>
-        /// f(2)+f(4)+f(6)+...+f(2n)=f(2n+1)-1(n>=1)
+        ///     f(2)+f(4)+f(6)+...+f(2n)=f(2n+1)-1(n>=1)
         /// </summary>
         /// <param name="index"></param>
         /// <returns></returns>
@@ -220,13 +229,13 @@ namespace KeLi.SkillPoint.App.Thinking
             double result = 0;
 
             for (var i = 1; i <= index; i++)
-                result += GetBase2(2*i);
+                result += GetBase2(2 * i);
 
             return result;
         }
 
         /// <summary>
-        /// [f(0)]^2+[f(1)]^2+...+[f(n)]^2=f(n)·f(n+1)(n>=0)
+        ///     [f(0)]^2+[f(1)]^2+...+[f(n)]^2=f(n)·f(n+1)(n>=0)
         /// </summary>
         /// <param name="index"></param>
         /// <returns></returns>
@@ -235,13 +244,13 @@ namespace KeLi.SkillPoint.App.Thinking
             double result = 0;
 
             for (var i = 0; i <= index; i++)
-                result += Math.Pow(GetBase2(2*i), 2);
+                result += Math.Pow(GetBase2(2 * i), 2);
 
             return result;
         }
 
         /// <summary>
-        /// f(0)-f(1)+f(2)-...+(-1)^n·f(n)=(-1)^n·[f(n+1)-f(n)]+1(n>=0)
+        ///     f(0)-f(1)+f(2)-...+(-1)^n·f(n)=(-1)^n·[f(n+1)-f(n)]+1(n>=0)
         /// </summary>
         /// <param name="index"></param>
         /// <returns></returns>
@@ -250,34 +259,34 @@ namespace KeLi.SkillPoint.App.Thinking
             double result = 0;
 
             for (var i = 1; i <= index; i++)
-                result += Math.Pow(GetBase2(2*i), 2);
+                result += Math.Pow(GetBase2(2 * i), 2);
 
             return result;
         }
 
         /// <summary>
-        /// f(m-1)·f(n-1)+f(m)·f(n)=f(m+n)(m>=1,n>=1)
+        ///     f(m-1)·f(n-1)+f(m)·f(n)=f(m+n)(m>=1,n>=1)
         /// </summary>
         /// <param name="num1"></param>
         /// <param name="num2"></param>
         /// <returns></returns>
         public static double GetFeature6(int num1, int num2)
         {
-            return GetBase2(num1 - 1)*GetBase2(num2 - 1);
+            return GetBase2(num1 - 1) * GetBase2(num2 - 1);
         }
 
         /// <summary>
-        /// (-1)^(n-1)+f(n-1)·f(n+1)=[f(n)]^2(n>=1)
+        ///     (-1)^(n-1)+f(n-1)·f(n+1)=[f(n)]^2(n>=1)
         /// </summary>
         /// <param name="num"></param>
         /// <returns></returns>
         public static double GetFeature7(int num)
         {
-            return Math.Pow(-1, num - 1) + GetBase2(num - 1)*GetBase2(num + 1);
+            return Math.Pow(-1, num - 1) + GetBase2(num - 1) * GetBase2(num + 1);
         }
 
         /// <summary>
-        /// [f(n)]^2-[f(n-2)]^2=f(2n-1)(n>=2)
+        ///     [f(n)]^2-[f(n-2)]^2=f(2n-1)(n>=2)
         /// </summary>
         /// <param name="num"></param>
         /// <returns></returns>
@@ -287,7 +296,7 @@ namespace KeLi.SkillPoint.App.Thinking
         }
 
         /// <summary>
-        /// f(n+2)+f(n-2)=3f(n)(n>=2)
+        ///     f(n+2)+f(n-2)=3f(n)(n>=2)
         /// </summary>
         /// <param name="num"></param>
         /// <returns></returns>
@@ -297,14 +306,14 @@ namespace KeLi.SkillPoint.App.Thinking
         }
 
         /// <summary>
-        /// f(2n-2m-2)[f(2n)+f(2n+2)]=f(2m+2)+f(4n-2m)(n>m>=-1,n>=1)
+        ///     f(2n-2m-2)[f(2n)+f(2n+2)]=f(2m+2)+f(4n-2m)(n>m>=-1,n>=1)
         /// </summary>
         /// <param name="num1"></param>
         /// <param name="num2"></param>
         /// <returns></returns>
         public static double GetFeature10(int num1, int num2)
         {
-            return GetBase2(2*num2 - 2*num1 - 2)*(GetBase2(2*num1 + 2) + GetBase2(4*num2 - 2*num1));
+            return GetBase2(2 * num2 - 2 * num1 - 2) * (GetBase2(2 * num1 + 2) + GetBase2(4 * num2 - 2 * num1));
         }
     }
 }

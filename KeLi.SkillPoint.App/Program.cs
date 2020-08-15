@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Diagnostics;
+using System.Numerics;
+
 using KeLi.SkillPoint.App.Arithmetic;
 using KeLi.SkillPoint.App.Syntax;
 using KeLi.SkillPoint.App.Thinking;
