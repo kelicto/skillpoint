@@ -8,6 +8,8 @@ namespace KeLi.SkillPoint.App.Thinking
     /// </summary>
     public class FibonacciSequence
     {
+        private static readonly ulong[] cache = { 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89 };
+
         /// <summary>
         ///     Shows the result.
         /// </summary>
@@ -143,6 +145,33 @@ namespace KeLi.SkillPoint.App.Thinking
         {
             Console.WriteLine(GetFeature10(10, 12));
             Console.WriteLine();
+        }
+
+        /// <summary>
+        ///     It's very fast that provided by Shao Taihua.
+        /// </summary>
+        /// <param name="index"></param>
+        /// <returns></returns>
+        public static BigInteger GetBase0(int index)
+        {
+            if (index < cache.Length - 1)
+                return cache[index];
+
+            if (index % 2 == 0)
+            {
+                var middle = GetBase0(index / 2);
+                var preMiddle = GetBase0(index / 2 - 1);
+
+                return middle * (middle + 2 * preMiddle);
+            }
+
+            else
+            {
+                var middle = GetBase0(index / 2);
+                var nextMiddle = GetBase0(index / 2 + 1);
+
+                return nextMiddle * nextMiddle + middle * middle;
+            }
         }
 
         /// <summary>
