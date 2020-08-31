@@ -79,6 +79,9 @@ namespace KeLi.SkillPoint.App.Thinking
             Console.WriteLine("Does support lambda, safe, based on iterator");
             Console.WriteLine();
 
+            Console.WriteLine("-------------------------------------------------------------");
+            Console.WriteLine();
+
             Console.WriteLine("Gets target data(Speed): Find >> First == FirstOrDefault");
             Console.WriteLine("Exists target data(Speed): Contains > FindIndex == Exists >> Any");
             Console.ReadKey();
