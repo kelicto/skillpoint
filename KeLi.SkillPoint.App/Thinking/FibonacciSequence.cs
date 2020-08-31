@@ -6,14 +6,14 @@ namespace KeLi.SkillPoint.App.Thinking
     /// <summary>
     ///     Fibonacci sequence.
     /// </summary>
-    public class FibonacciSequence
+    public class FibonacciSequence : IResult
     {
         private static readonly ulong[] cache = { 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89 };
 
         /// <summary>
         ///     Shows the result.
         /// </summary>
-        public static void ShowResult()
+        public void ShowResult()
         {
             ShowBase1();
             ShowBase2();

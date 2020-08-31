@@ -4,11 +4,11 @@ using System.Linq;
 
 namespace KeLi.SkillPoint.App.Thinking
 {
-    public class UvSort
+    public class UvSort : IResult
     {
-        public static void ShowResult()
+        public void ShowResult()
         {
-            var uvs = new List<Uv> {new Uv(11, 10), new Uv(8, 6), new Uv(8, 9), new Uv(7, 11)};
+            var uvs = new List<Uv> { new Uv(11, 10), new Uv(8, 6), new Uv(8, 9), new Uv(7, 11) };
 
             SortUvs(uvs);
             uvs.Sort(new UvCompare());

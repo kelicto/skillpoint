@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+
 using KeLi.SkillPoint.App.Properties;
+using KeLi.SkillPoint.App.Thinking;
 
 namespace KeLi.SkillPoint.App.Syntax
 {
-    public class HashcodeUsage
+    public class HashcodeUsage : IResult
     {
-        public static void ShowResult()
+        public void ShowResult()
         {
             const int num = 123456789;
             var pointA = new Point(1, 2);
@@ -59,7 +61,7 @@ namespace KeLi.SkillPoint.App.Syntax
             {
                 unchecked
                 {
-                    return (X*397) ^ Y;
+                    return (X * 397) ^ Y;
                 }
             }
         }

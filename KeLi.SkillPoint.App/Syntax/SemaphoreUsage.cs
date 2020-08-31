@@ -1,14 +1,16 @@
 ﻿using System;
 using System.Threading;
+
 using KeLi.SkillPoint.App.Properties;
+using KeLi.SkillPoint.App.Thinking;
 
 namespace KeLi.SkillPoint.App.Syntax
 {
-    public class SemaphoreUsage
+    public class SemaphoreUsage : IResult
     {
         private static readonly Semaphore Semaphore = new Semaphore(5, 15);
 
-        public static void ShowResult()
+        public void ShowResult()
         {
             for (var i = 0; i < 10; i++)
             {

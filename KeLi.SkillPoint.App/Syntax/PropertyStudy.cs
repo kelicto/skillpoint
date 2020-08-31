@@ -52,63 +52,74 @@ using System.Collections.Generic;
 namespace KeLi.SkillPoint.App.Thinking
 {
     /// <summary>
-    /// Property study.
+    ///     Property study.
     /// </summary>
-    public class PropertyStudy
+    public class PropertyStudy : IResult
     {
         /// <summary>
-        /// Readonly property, the class inner can modify it.
+        ///     Readonly property, the class inner can modify it.
         /// </summary>
         public static List<int> Uvs1 { get; private set; }
 
         /// <summary>
-        /// Readonly property, no area can modify it.
+        ///     Readonly property, no area can modify it.
         /// </summary>
         public static List<int> Uvs2 { get; }
 
         /// <summary>
-        /// Readonly property, the class inner can modify it.
+        ///     Readonly property, the class inner can modify it.
         /// </summary>
         public static List<int> Uvs3 { get; private set; } = new List<int>();
 
         /// <summary>
-        /// Readonly property, init it and no area can modify it.
+        ///     Readonly property, init it and no area can modify it.
         /// </summary>
         public static List<int> Uvs4 { get; } = new List<int>();
 
         /// <summary>
-        /// Readonly property, init it and no area can modify it.
+        ///     Readonly property, init it and no area can modify it.
         /// </summary>
         public static List<int> Uvs5 => new List<int>();
 
         /// <summary>
-        /// Writeonly property, no area can read it.
+        ///     Writeonly property, no area can read it.
         /// </summary>
         public static List<int> Uvs6 { private get; set; }
 
         /// <summary>
-        /// Writeonly property, init it and the class inner can read it.
+        ///     Writeonly property, init it and the class inner can read it.
         /// </summary>
         public static List<int> Uvs7 { private get; set; } = new List<int>();
 
         /// <summary>
-        /// It can get or set value.
+        ///     It can get or set value.
         /// </summary>
         public static List<int> Uvs8 { get; set; }
 
         /// <summary>
-        /// It can get or set value and init value.
+        ///     It can get or set value and init value.
         /// </summary>
         public static List<int> Uvs9 { get; set; } = new List<int>();
 
         /// <summary>
-        /// Tests property in my class.
+        ///     Shows property result.
+        /// </summary>
+        public void ShowResult()
+        {
+            TestPropertyMyClass();
+            PropertyTestClass.TestPropertyInOtherClass();
+        }
+
+        /// <summary>
+        ///     Tests property in my class.
         /// </summary>
         public static void TestPropertyMyClass()
         {
             Uvs1 = new List<int>();
+
             // Uvs2 = new List<int>();
             Uvs3 = new List<int>();
+
             // Uvs4 = new List<int>();
             // Uvs5 = new List<int>();
             Uvs6 = new List<int>();
@@ -126,24 +137,15 @@ namespace KeLi.SkillPoint.App.Thinking
             Console.WriteLine(Uvs8);
             Console.WriteLine(Uvs9);
         }
-
-        /// <summary>
-        /// Shows property result.
-        /// </summary>
-        public static void ShowResult()
-        {
-            TestPropertyMyClass();
-            PropertyTestClass.TestPropertyInOtherClass();
-        }
     }
 
     /// <summary>
-    /// Propery access test class.
+    ///     Propery access test class.
     /// </summary>
     public class PropertyTestClass
     {
         /// <summary>
-        /// Tests property in other class.
+        ///     Tests property in other class.
         /// </summary>
         public static void TestPropertyInOtherClass()
         {
@@ -161,6 +163,7 @@ namespace KeLi.SkillPoint.App.Thinking
             Console.WriteLine(PropertyStudy.Uvs3);
             Console.WriteLine(PropertyStudy.Uvs4);
             Console.WriteLine(PropertyStudy.Uvs5);
+
             // Console.WriteLine(PropertyStudy.Uvs6);
             // Console.WriteLine(PropertyStudy.Uvs7);
             Console.WriteLine(PropertyStudy.Uvs8);

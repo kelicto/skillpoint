@@ -4,18 +4,16 @@ using System.Linq;
 
 namespace KeLi.SkillPoint.App.Thinking
 {
-    public class TeacherData
+    public class TeacherData : IResult
     {
-        public static void ShowResult()
+        public void ShowResult()
         {
             foreach (var tm in GetTeacherModels())
             {
                 foreach (var classroom in tm.Classrooms)
                 {
                     foreach (var student in tm.Students.Where(w => w.ClassroomId == classroom.ClassroomId))
-                    {
                         Console.WriteLine(tm.TeacherId + "\t" + classroom.ClassroomName + "\t" + student.StudentName);
-                    }
                 }
             }
         }

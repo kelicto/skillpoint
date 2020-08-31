@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 
+using KeLi.SkillPoint.App.Thinking;
+
 namespace KeLi.SkillPoint.App.Syntax
 {
-    public class ListStruct
+    public class ListStruct : IResult
     {
-        public static void ShowResult()
+        public void ShowResult()
         {
             //var bitAry = new BitArray(10);
 

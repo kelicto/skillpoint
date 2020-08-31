@@ -4,11 +4,11 @@ using System.Linq;
 
 namespace KeLi.SkillPoint.App.Thinking
 {
-    public class LoopUsage
+    public class LoopUsage : IResult
     {
         private static int _index;
 
-        public static void ShowResult()
+        public void ShowResult()
         {
             var max1 = LoopDataByFor().Max();
 

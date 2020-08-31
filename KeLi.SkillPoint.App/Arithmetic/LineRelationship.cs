@@ -1,10 +1,12 @@
 ﻿using System;
 
+using KeLi.SkillPoint.App.Thinking;
+
 namespace KeLi.SkillPoint.App.Arithmetic
 {
-    public class LineRelationship
+    public class LineRelationship : IResult
     {
-        public static void ShowResult()
+        public void ShowResult()
         {
             var p1 = new Point(1.0, 2.0);
             var p2 = new Point(2.0, 5.0);

@@ -38,7 +38,9 @@
     </DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\KeLi.Libs\Newtonsoft.Json.10.0\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -56,7 +58,7 @@
     <Compile Include="Arithmetic\LineRelationship.cs" />
     <Compile Include="Arithmetic\NumPyramid.cs" />
     <Compile Include="Arithmetic\NumSum.cs" />
-    <Compile Include="Common\RegexUtil.cs" />
+    <Compile Include="RegexUtil.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -69,8 +71,10 @@
     <Compile Include="Syntax\ListStruct.cs" />
     <Compile Include="Thinking\ConfigRw.cs" />
     <Compile Include="Syntax\PropertyStudy.cs" />
+    <Compile Include="IResult.cs" />
+    <Compile Include="Thinking\LinqQuery.cs" />
     <Compile Include="Thinking\LinqThinking.cs" />
-    <Compile Include="Thinking\DtLoading.cs" />
+    <Compile Include="Thinking\DataTableLoading.cs" />
     <Compile Include="Thinking\LogUsage.cs" />
     <Compile Include="Syntax\CustomerFormat.cs" />
     <Compile Include="Syntax\DelegateTest.cs" />

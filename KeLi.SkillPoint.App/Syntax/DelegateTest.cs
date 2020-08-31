@@ -1,11 +1,13 @@
 ﻿using System;
+
 using KeLi.SkillPoint.App.Properties;
+using KeLi.SkillPoint.App.Thinking;
 
 namespace KeLi.SkillPoint.App.Syntax
 {
-    public class DelegateTest
+    public class DelegateTest : IResult
     {
-        public static void ShowResult()
+        public void ShowResult()
         {
             var alarm = new Alarm();
             var dog = new Dog();
@@ -54,6 +56,7 @@ namespace KeLi.SkillPoint.App.Syntax
                     if (DateTime.Now.Second == 10)
                     {
                         alarm.OnAlarm();
+
                         break;
                     }
 

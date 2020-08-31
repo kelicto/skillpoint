@@ -49,13 +49,15 @@
 using System.Collections.Generic;
 using System.Linq;
 
+using KeLi.SkillPoint.App.Thinking;
+
 namespace KeLi.SkillPoint.App.Arithmetic
 {
-    public class GroupingUsage
+    public class GroupingUsage : IResult
     {
         private static double Lvl => 3.0;
 
-        public static void ShowResult()
+        public void ShowResult()
         {
             // Gives you a num array.
             var keys = new List<double> { 1, 3, 2, 8, 9, 11, 6, 18 };
@@ -98,6 +100,7 @@ namespace KeLi.SkillPoint.App.Arithmetic
                     else
                     {
                         index = j;
+
                         break;
                     }
                 }

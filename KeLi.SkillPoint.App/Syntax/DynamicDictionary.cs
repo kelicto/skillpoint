@@ -2,13 +2,21 @@
 using System.Collections.Generic;
 using System.Dynamic;
 
+using KeLi.SkillPoint.App.Thinking;
+
 namespace KeLi.SkillPoint.App.Syntax
 {
-    public class DynamicDictionary : DynamicObject
+    public class DynamicDictionary : DynamicObject, IResult
     {
-        private readonly Dictionary<string, object> _dict  = new Dictionary<string, object>();
+        private readonly Dictionary<string, object> _dict = new Dictionary<string, object>();
 
         public int Count => _dict.Count;
+
+        public void ShowResult()
+        {
+            TestExpandoObject();
+            TestDynamicObject();
+        }
 
         public override bool TryGetMember(GetMemberBinder binder, out object result)
         {
@@ -20,12 +28,6 @@ namespace KeLi.SkillPoint.App.Syntax
             _dict[binder.Name.ToLower()] = value;
 
             return true;
-        }
-
-        public static void ShowResult()
-        {
-            TestExpandoObject();
-            TestDynamicObject();
         }
 
         public static void TestExpandoObject()

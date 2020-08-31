@@ -1,14 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
+using KeLi.SkillPoint.App.Thinking;
 
 namespace KeLi.SkillPoint.App.Syntax
 {
-    public class BitOperator
+    public class BitOperator : IResult
     {
-        public static void ShowResult()
+        public void ShowResult()
         {
             var a1 = 0b1;
             var a2 = 0b10;
@@ -48,7 +46,6 @@ namespace KeLi.SkillPoint.App.Syntax
                 Console.WriteLine("Current Status is even number.");
 
             Console.ReadLine();
-
         }
     }
 }

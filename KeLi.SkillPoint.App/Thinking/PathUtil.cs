@@ -4,11 +4,13 @@ using System.IO;
 using System.Reflection;
 using System.Windows.Forms;
 
+using KeLi.SkillPoint.App.Thinking;
+
 namespace KeLi.SkillPoint.Test
 {
-    public class PathUtil
+    public class PathUtil : IResult
     {
-        public static void ShowResult()
+        public void ShowResult()
         {
             // Environment.CurrentDirectory: [BasePath]\KeLi.SkillPoint\KeLi.SkillPoint.App\bin\Debug
             Console.WriteLine("Environment.CurrentDirectory: " + Environment.CurrentDirectory);

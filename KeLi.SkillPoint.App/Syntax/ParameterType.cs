@@ -1,10 +1,12 @@
 ﻿using System;
 
+using KeLi.SkillPoint.App.Thinking;
+
 namespace KeLi.SkillPoint.App.Syntax
 {
-    public class ParameterType
+    public class ParameterType : IResult
     {
-        public static void ShowResult()
+        public void ShowResult()
         {
             var a = 1;
             var b = 2;

@@ -1,12 +1,13 @@
 ﻿using System;
 using System.IO;
+
 using KeLi.SkillPoint.App.Properties;
 
 namespace KeLi.SkillPoint.App.Thinking
 {
-    public class LogUsage
+    public class LogUsage : IResult
     {
-        public static void ShowResult()
+        public void ShowResult()
         {
             for (var i = 0; i < 100; i++)
                 WriteLog(i);
@@ -20,10 +21,12 @@ namespace KeLi.SkillPoint.App.Thinking
             var filePath = Path.Combine(Resources.ConnectLog, DateTime.Now.ToString(Resources.TimeFormat));
 
             using (var fs = new FileStream(filePath, FileMode.Append))
-            using (var sw = new StreamWriter(fs))
             {
-                sw.WriteLine("[" + DateTime.Now.ToString(Resources.ExactPartTimeFormat) + "]" + context);
-                sw.WriteLine();
+                using (var sw = new StreamWriter(fs))
+                {
+                    sw.WriteLine("[" + DateTime.Now.ToString(Resources.ExactPartTimeFormat) + "]" + context);
+                    sw.WriteLine();
+                }
             }
         }
     }

@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Diagnostics;
-using System.Numerics;
 
 using KeLi.SkillPoint.App.Arithmetic;
 using KeLi.SkillPoint.App.Syntax;
@@ -41,44 +39,45 @@ namespace KeLi.SkillPoint.App
 
         public static void ShowArithmetic()
         {
-            DataExchange.ShowResult();
-            GroupingUsage.ShowResult();
-            LineRelationship.ShowResult();
-            NumSum.ShowResult();
-            NumPyramid.ShowResult();
+            new DataExchange().ShowResult();
+            new GroupingUsage().ShowResult();
+            new LineRelationship().ShowResult();
+            new NumSum().ShowResult();
+            new NumPyramid().ShowResult();
         }
 
         public static void ShowSyntax()
         {
-            PropertyStudy.ShowResult();
-            ListStruct.ShowResult();
-            DynamicDictionary.ShowResult();
-            SemaphoreUsage.ShowResult();
-            XmlUsage.ShowResult();
-            FuncDelegation.ShowResult();
-            CustomerFormat.ShowResult();
-            JsonUsage.ShowResult();
-            ParameterType.ShowResult();
-            HashcodeUsage.ShowResult();
-            OperatorUsage.ShowResult();
-            DelegateTest.ShowResult();
+            new PropertyStudy().ShowResult();
+            new ListStruct().ShowResult();
+            new DynamicDictionary().ShowResult();
+            new SemaphoreUsage().ShowResult();
+            new XmlUsage().ShowResult();
+            new FuncDelegation().ShowResult();
+            new CustomerFormat().ShowResult();
+            new JsonUsage().ShowResult();
+            new ParameterType().ShowResult();
+            new HashcodeUsage().ShowResult();
+            new OperatorUsage().ShowResult();
+            new DelegateTest().ShowResult();
         }
 
         public static void ShowThinking()
         {
-            PathUtil.ShowResult();
-            BitOperator.ShowResult();
-            TeacherData.ShowResult();
-            ConfigRw.ShowResult();
-            DtLoading.ShowResult();
-            LogUsage.ShowResult();
-            EndianUsage.ShowResult();
-            FibonacciSequence.ShowResult();
-            LinqThinking.ShowResult();
-            LoopUsage.ShowResult();
-            PriorityUsage.ShowResult();
-            UvSort.ShowResult();
-            XyzThinking.ShowResult();
+            new LinqQuery().ShowResult();
+            new PathUtil().ShowResult();
+            new BitOperator().ShowResult();
+            new TeacherData().ShowResult();
+            new ConfigRw().ShowResult();
+            new DataTableLoading().ShowResult();
+            new LogUsage().ShowResult();
+            new EndianUsage().ShowResult();
+            new FibonacciSequence().ShowResult();
+            new LinqThinking().ShowResult();
+            new LoopUsage().ShowResult();
+            new PriorityUsage().ShowResult();
+            new UvSort().ShowResult();
+            new XyzThinking().ShowResult();
         }
     }
 }

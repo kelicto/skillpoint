@@ -2,13 +2,14 @@
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
+
 using KeLi.SkillPoint.App.Properties;
 
 namespace KeLi.SkillPoint.App.Thinking
 {
-    public class DtLoading
+    public class DataTableLoading : IResult
     {
-        public static void ShowResult()
+        public void ShowResult()
         {
             if (LoadDataTable())
             {

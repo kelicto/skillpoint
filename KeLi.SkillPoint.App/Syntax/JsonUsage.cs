@@ -1,13 +1,15 @@
 ﻿using System;
 using System.IO;
-using KeLi.SkillPoint.App.Properties;
+
+using KeLi.SkillPoint.App.Thinking;
+
 using Newtonsoft.Json;
 
 namespace KeLi.SkillPoint.App.Syntax
 {
-    public class JsonUsage
+    public class JsonUsage : IResult
     {
-        public static void ShowResult()
+        public void ShowResult()
         {
             var json = "{'Province': ['HeNan', 'HeBei', 'ShanDong', 'ShanXi', 'HuNan', 'HuBei', 'GuangXi', 'GuangDong']}";
 
@@ -21,23 +23,25 @@ namespace KeLi.SkillPoint.App.Syntax
             var result = json;
 
             using (var tr = new StringReader(json))
-            using (var jtr = new JsonTextReader(tr))
             {
-                var obj = js.Deserialize(jtr);
-
-                if (obj != null)
+                using (var jtr = new JsonTextReader(tr))
                 {
-                    using (var sw = new StringWriter())
-                    {
-                        var jsonWriter = new JsonTextWriter(sw)
-                        {
-                            Formatting = Formatting.Indented,
-                            Indentation = 4,
-                            IndentChar = ' '
-                        };
+                    var obj = js.Deserialize(jtr);
 
-                        js.Serialize(jsonWriter, obj);
-                        result = sw.ToString();
+                    if (obj != null)
+                    {
+                        using (var sw = new StringWriter())
+                        {
+                            var jsonWriter = new JsonTextWriter(sw)
+                            {
+                                Formatting = Formatting.Indented,
+                                Indentation = 4,
+                                IndentChar = ' '
+                            };
+
+                            js.Serialize(jsonWriter, obj);
+                            result = sw.ToString();
+                        }
                     }
                 }
             }

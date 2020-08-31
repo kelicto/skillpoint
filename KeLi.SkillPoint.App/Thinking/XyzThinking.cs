@@ -2,9 +2,9 @@
 
 namespace KeLi.SkillPoint.App.Thinking
 {
-    public class XyzThinking
+    public class XyzThinking : IResult
     {
-        public static void ShowResult()
+        public void ShowResult()
         {
             var point1 = new Xyz(1.123456789123456, 1.123456789123123, 1.123456789456456);
             var point2 = new Xyz(1.123456789123455, 1.123456789123125, 1.123456789456455);

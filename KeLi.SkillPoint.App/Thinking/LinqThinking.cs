@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+
 using KeLi.SkillPoint.App.Properties;
 
 namespace KeLi.SkillPoint.App.Thinking
 {
-    public class LinqThinking
+    public class LinqThinking : IResult
     {
-        public static void ShowResult()
+        public void ShowResult()
         {
             SearchData();
             DestroySearch();
@@ -70,7 +71,7 @@ namespace KeLi.SkillPoint.App.Thinking
 
         private static List<string> GetNames()
         {
-            return new List<string> {Resources.Nino, Resources.Juan, Resources.Mike, Resources.Phil};
+            return new List<string> { Resources.Nino, Resources.Juan, Resources.Mike, Resources.Phil };
         }
     }
 }

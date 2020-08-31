@@ -1,11 +1,12 @@
 ﻿using System;
-using KeLi.SkillPoint.App.Properties;
+
+using KeLi.SkillPoint.App.Thinking;
 
 namespace KeLi.SkillPoint.App.Arithmetic
 {
-    public class NumPyramid
+    public class NumPyramid : IResult
     {
-        public static void ShowResult()
+        public void ShowResult()
         {
             Console.Write("Please input num: ");
 
@@ -15,11 +16,8 @@ namespace KeLi.SkillPoint.App.Arithmetic
             if (results.Length == 0)
                 return;
 
-            else
-            {
-                foreach (var result in results)
-                    Console.WriteLine(result);
-            }
+            foreach (var result in results)
+                Console.WriteLine(result);
         }
 
         private static string[] GetNumLines(string str)

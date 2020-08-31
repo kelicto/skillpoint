@@ -1,10 +1,12 @@
 ﻿using System;
 
+using KeLi.SkillPoint.App.Thinking;
+
 namespace KeLi.SkillPoint.App.Syntax
 {
-    public class FuncDelegation
+    public class FuncDelegation : IResult
     {
-        public static void ShowResult()
+        public void ShowResult()
         {
             Console.WriteLine(ToBool(null, true));
             Console.WriteLine();

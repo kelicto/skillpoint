@@ -1,14 +1,15 @@
 ﻿using System;
+
 using KeLi.SkillPoint.App.Properties;
 
 namespace KeLi.SkillPoint.App.Thinking
 {
-    public class PriorityUsage
+    public class PriorityUsage : IResult
     {
-        public static void ShowResult()
+        public void ShowResult()
         {
-            object a = (int) 1.1/1.0;
-            object b = (int) (1.1/1.0);
+            object a = (int)1.1 / 1.0;
+            object b = (int)(1.1 / 1.0);
             var s = a is int ? "1" : "1.0";
             var t = b is int ? "1" : "1.0";
 

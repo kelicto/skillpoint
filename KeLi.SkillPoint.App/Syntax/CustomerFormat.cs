@@ -1,9 +1,10 @@
 ﻿using System;
-using KeLi.SkillPoint.App.Properties;
+
+using KeLi.SkillPoint.App.Thinking;
 
 namespace KeLi.SkillPoint.App.Syntax
 {
-    public class CustomerFormat : IFormatProvider, ICustomFormatter
+    public class CustomerFormat : IResult, IFormatProvider, ICustomFormatter
     {
         public string Format(string format, object arg, IFormatProvider provider)
         {
@@ -14,18 +15,22 @@ namespace KeLi.SkillPoint.App.Syntax
             {
                 case "US":
                     result = "$" + arg;
+
                     break;
 
                 case "CN":
                     result = "￥" + arg;
+
                     break;
 
                 case null:
                     result = formattable?.ToString(null, provider) ?? arg.ToString();
+
                     break;
 
                 default:
                     result = formattable?.ToString(null, provider) ?? arg.ToString();
+
                     break;
             }
 
@@ -34,13 +39,13 @@ namespace KeLi.SkillPoint.App.Syntax
 
         public object GetFormat(Type format)
         {
-            if (format == typeof (ICustomFormatter))
+            if (format == typeof(ICustomFormatter))
                 return this;
 
             return null;
         }
 
-        public static void ShowResult()
+        public void ShowResult()
         {
             var mf = new CustomerFormat();
 

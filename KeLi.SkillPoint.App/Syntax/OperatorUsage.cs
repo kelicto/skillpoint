@@ -1,10 +1,12 @@
 ﻿using System;
 
+using KeLi.SkillPoint.App.Thinking;
+
 namespace KeLi.SkillPoint.App.Syntax
 {
-    public class OperatorUsage
+    public class OperatorUsage : IResult
     {
-        public static void ShowResult()
+        public void ShowResult()
         {
             var a = new Student(80, 70);
             var b = new Student(85, 83);

@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Linq;
+
 using KeLi.SkillPoint.App.Properties;
+using KeLi.SkillPoint.App.Thinking;
 
 namespace KeLi.SkillPoint.App.Arithmetic
 {
-    public class NumSum
+    public class NumSum : IResult
     {
-        public static void ShowResult()
+        public void ShowResult()
         {
             Console.Write("Please input num: ");
 
@@ -17,14 +19,17 @@ namespace KeLi.SkillPoint.App.Arithmetic
             {
                 case -1:
                     Console.WriteLine("Input Error!");
+
                     break;
 
                 case 0:
                     Console.WriteLine("Max Num Error!");
+
                     break;
 
                 default:
                     Console.WriteLine(Resources.NumSum + GetNumSum(input));
+
                     break;
             }
         }

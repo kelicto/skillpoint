@@ -2,13 +2,14 @@
 using System.IO;
 using System.Linq;
 using System.Xml;
+
 using KeLi.SkillPoint.App.Properties;
 
 namespace KeLi.SkillPoint.App.Thinking
 {
-    public class ConfigRw
+    public class ConfigRw : IResult
     {
-        public static void ShowResult()
+        public void ShowResult()
         {
             WriteConfig(Resources.CrErrorConnStr);
 
@@ -37,6 +38,7 @@ namespace KeLi.SkillPoint.App.Thinking
                     childNode.FirstChild.Attributes[Resources.ConnStrValueName].Value = content;
 
                 xd.Save(path);
+
                 break;
             }
         }
