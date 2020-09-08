@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 using KeLi.SkillPoint.App.Arithmetic;
 using KeLi.SkillPoint.App.Syntax;
@@ -34,7 +35,6 @@ namespace KeLi.SkillPoint.App
 
         public static void TestDemo()
         {
-            new LinqQuery().ShowResult();
             Console.ReadKey();
         }
 
@@ -65,6 +65,7 @@ namespace KeLi.SkillPoint.App
 
         public static void ShowThinking()
         {
+            new LinqQuery().ShowResult();
             new PathUtil().ShowResult();
             new BitOperator().ShowResult();
             new TeacherData().ShowResult();
