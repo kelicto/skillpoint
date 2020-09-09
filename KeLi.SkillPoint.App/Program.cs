@@ -4,7 +4,6 @@ using System.Threading;
 using KeLi.SkillPoint.App.Arithmetic;
 using KeLi.SkillPoint.App.Syntax;
 using KeLi.SkillPoint.App.Thinking;
-using KeLi.SkillPoint.Test;
 
 namespace KeLi.SkillPoint.App
 {
@@ -49,6 +48,7 @@ namespace KeLi.SkillPoint.App
 
         public static void ShowSyntax()
         {
+            new RegexStudy().ShowResult();
             new PropertyStudy().ShowResult();
             new ListStruct().ShowResult();
             new DynamicDictionary().ShowResult();

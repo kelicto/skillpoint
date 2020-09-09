@@ -49,7 +49,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace KeLi.SkillPoint.App.Thinking
+namespace KeLi.SkillPoint.App.Syntax
 {
     /// <summary>
     ///     Property study.

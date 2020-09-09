@@ -4,9 +4,7 @@ using System.IO;
 using System.Reflection;
 using System.Windows.Forms;
 
-using KeLi.SkillPoint.App.Thinking;
-
-namespace KeLi.SkillPoint.Test
+namespace KeLi.SkillPoint.App.Thinking
 {
     public class PathUtil : IResult
     {

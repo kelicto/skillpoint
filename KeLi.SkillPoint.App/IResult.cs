@@ -1,4 +1,4 @@
-﻿namespace KeLi.SkillPoint.App.Thinking
+﻿namespace KeLi.SkillPoint.App
 {
     public interface IResult
     {
