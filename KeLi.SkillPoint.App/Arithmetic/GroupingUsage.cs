@@ -49,8 +49,6 @@
 using System.Collections.Generic;
 using System.Linq;
 
-using KeLi.SkillPoint.App.Thinking;
-
 namespace KeLi.SkillPoint.App.Arithmetic
 {
     public class GroupingUsage : IResult
@@ -112,8 +110,10 @@ namespace KeLi.SkillPoint.App.Arithmetic
                 var lnis = nums[i];
                 var lnjs = nums[i + 1];
 
+                // ReSharper disable once UnusedVariable
                 foreach (var lni in lnis)
                 {
+                    // ReSharper disable once UnusedVariable
                     foreach (var lnj in lnjs)
                     {
                         // ...

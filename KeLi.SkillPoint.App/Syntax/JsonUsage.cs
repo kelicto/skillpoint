@@ -1,8 +1,6 @@
 ﻿using System;
 using System.IO;
 
-using KeLi.SkillPoint.App.Thinking;
-
 using Newtonsoft.Json;
 
 namespace KeLi.SkillPoint.App.Syntax

@@ -1,7 +1,5 @@
 ﻿using System;
 
-using KeLi.SkillPoint.App.Thinking;
-
 namespace KeLi.SkillPoint.App.Arithmetic
 {
     public class LineRelationship : IResult

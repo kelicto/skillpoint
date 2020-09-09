@@ -1,8 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 
-using KeLi.SkillPoint.App.Thinking;
-
 namespace KeLi.SkillPoint.App.Syntax
 {
     public class ListStruct : IResult

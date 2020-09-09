@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Threading;
 
 using KeLi.SkillPoint.App.Arithmetic;
 using KeLi.SkillPoint.App.Syntax;

@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.Dynamic;
 
-using KeLi.SkillPoint.App.Thinking;
-
 namespace KeLi.SkillPoint.App.Syntax
 {
     public class DynamicDictionary : DynamicObject, IResult

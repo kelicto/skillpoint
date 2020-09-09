@@ -2,7 +2,6 @@
 using System.Threading;
 
 using KeLi.SkillPoint.App.Properties;
-using KeLi.SkillPoint.App.Thinking;
 
 namespace KeLi.SkillPoint.App.Syntax
 {

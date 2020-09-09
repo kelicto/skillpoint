@@ -2,7 +2,6 @@
 using System.Linq;
 
 using KeLi.SkillPoint.App.Properties;
-using KeLi.SkillPoint.App.Thinking;
 
 namespace KeLi.SkillPoint.App.Arithmetic
 {

@@ -46,8 +46,6 @@
 		/_==__==========__==_ooo__ooo=_/'   /___________,"
 */
 
-using KeLi.SkillPoint.App.Thinking;
-
 namespace KeLi.SkillPoint.App.Arithmetic
 {
     public class DataExchange : IResult
