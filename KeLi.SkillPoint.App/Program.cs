@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.CompilerServices;
 
 using KeLi.SkillPoint.App.Arithmetic;
 using KeLi.SkillPoint.App.Syntax;
@@ -31,10 +34,13 @@ namespace KeLi.SkillPoint.App
             Console.ReadKey();
         }
 
+
         public static void TestDemo()
         {
             Console.ReadKey();
         }
+
+
 
         public static void ShowArithmetic()
         {
@@ -64,6 +70,7 @@ namespace KeLi.SkillPoint.App
 
         public static void ShowThinking()
         {
+            new HashCodeThinking().ShowResult();
             new LinqQuery().ShowResult();
             new PathUtil().ShowResult();
             new BitOperator().ShowResult();

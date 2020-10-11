@@ -72,6 +72,7 @@
     <Compile Include="Thinking\ConfigRw.cs" />
     <Compile Include="Syntax\PropertyStudy.cs" />
     <Compile Include="IResult.cs" />
+    <Compile Include="Thinking\HashCodeThinking.cs" />
     <Compile Include="Thinking\LinqQuery.cs" />
     <Compile Include="Thinking\LinqThinking.cs" />
     <Compile Include="Thinking\DataTableLoading.cs" />
