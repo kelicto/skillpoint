@@ -69,6 +69,7 @@
     <Compile Include="Syntax\BitOperator.cs" />
     <Compile Include="Syntax\DynamicDictionary.cs" />
     <Compile Include="Syntax\ListStruct.cs" />
+    <Compile Include="Thinking\ClassCommentStandard.cs" />
     <Compile Include="Thinking\ConfigRw.cs" />
     <Compile Include="Syntax\PropertyStudy.cs" />
     <Compile Include="IResult.cs" />
