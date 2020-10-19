@@ -19,13 +19,13 @@ namespace KeLi.SkillPoint.App.Thinking
             var names = GetNames();
 
             // Deferred query.
-            var name1s = from n in names where n.StartsWith("J") orderby n select n;
+            var name1S = from n in names where n.StartsWith("J") orderby n select n;
 
             // Deferred query.
-            var name2s = names.Where(n => n.StartsWith("J"));
+            var name2S = names.Where(n => n.StartsWith("J"));
 
             // Query now.
-            var name3s = names.FindAll(n => n.StartsWith("J"));
+            var name3S = names.FindAll(n => n.StartsWith("J"));
 
             names.Add(Resources.John);
             names.Add(Resources.Jim);
@@ -33,13 +33,13 @@ namespace KeLi.SkillPoint.App.Thinking
             names.Add(Resources.Denny);
 
             // Cans get now data.
-            name1s.ToList().ForEach(Console.WriteLine);
+            name1S.ToList().ForEach(Console.WriteLine);
 
             // Cans get now data.
-            name2s.ToList().ForEach(Console.WriteLine);
+            name2S.ToList().ForEach(Console.WriteLine);
 
             // Not can get now data.
-            name3s.ToList().ForEach(Console.WriteLine);
+            name3S.ToList().ForEach(Console.WriteLine);
         }
 
         public static void DestroySearch()
@@ -47,13 +47,13 @@ namespace KeLi.SkillPoint.App.Thinking
             var names = GetNames();
 
             // Deferred query.
-            var name1s = from n in names where n.StartsWith("J") orderby n select n;
+            var name1S = from n in names where n.StartsWith("J") orderby n select n;
 
             // Deferred query is destroyed.
-            var name2s = names.Where(n => n.StartsWith("J")).ToList();
+            var name2S = names.Where(n => n.StartsWith("J")).ToList();
 
             // Query now.
-            var name3s = names.FindAll(n => n.StartsWith("J"));
+            var name3S = names.FindAll(n => n.StartsWith("J"));
 
             // Object Transfer, destroy delayed queries
             var namels = new List<string>();
@@ -64,9 +64,9 @@ namespace KeLi.SkillPoint.App.Thinking
             names.Add(Resources.Jack);
             names.Add(Resources.Denny);
 
-            name1s.ToList().ForEach(Console.WriteLine);
-            name2s.ToList().ForEach(Console.WriteLine);
-            name3s.ToList().ForEach(Console.WriteLine);
+            name1S.ToList().ForEach(Console.WriteLine);
+            name2S.ToList().ForEach(Console.WriteLine);
+            name3S.ToList().ForEach(Console.WriteLine);
         }
 
         private static List<string> GetNames()

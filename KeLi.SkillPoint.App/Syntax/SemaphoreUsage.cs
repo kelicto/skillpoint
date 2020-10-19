@@ -7,7 +7,7 @@ namespace KeLi.SkillPoint.App.Syntax
 {
     public class SemaphoreUsage : IResult
     {
-        private static readonly Semaphore Semaphore = new Semaphore(5, 15);
+        private static readonly Semaphore _semaphore = new Semaphore(5, 15);
 
         public void ShowResult()
         {
@@ -21,13 +21,13 @@ namespace KeLi.SkillPoint.App.Syntax
 
         private static void GoBathroom(object obj)
         {
-            Semaphore.WaitOne();
+            _semaphore.WaitOne();
             Console.WriteLine(Resources.SuTime, obj, DateTime.Now);
             Console.WriteLine();
             Thread.Sleep(2000);
             Console.WriteLine(Resources.SuTime, obj, DateTime.Now);
             Console.WriteLine();
-            Semaphore.Release();
+            _semaphore.Release();
         }
     }
 }
