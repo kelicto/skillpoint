@@ -31,13 +31,10 @@ namespace KeLi.SkillPoint.App
             Console.ReadKey();
         }
 
-
         public static void TestDemo()
         {
             Console.ReadKey();
         }
-
-
 
         public static void ShowArithmetic()
         {
