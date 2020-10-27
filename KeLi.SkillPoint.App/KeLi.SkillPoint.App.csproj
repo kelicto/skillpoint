@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>KeLi.SkillPoint.App</RootNamespace>
     <AssemblyName>KeLi.SkillPoint.App</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -38,6 +38,9 @@
     </DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="KeLi.Power.Tool">
+      <HintPath>..\..\KeLi.Libs\KeLi.Power.1.0\KeLi.Power.Tool.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\..\KeLi.Libs\Newtonsoft.Json.10.0\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -74,6 +77,7 @@
     <Compile Include="Thinking\ConfigRw.cs" />
     <Compile Include="Syntax\PropertyStudy.cs" />
     <Compile Include="IResult.cs" />
+    <Compile Include="Thinking\DoublePerformanceTest.cs" />
     <Compile Include="Thinking\HashCodeThinking.cs" />
     <Compile Include="Thinking\LinqQuery.cs" />
     <Compile Include="Thinking\LinqThinking.cs" />

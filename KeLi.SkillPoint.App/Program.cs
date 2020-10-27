@@ -64,6 +64,7 @@ namespace KeLi.SkillPoint.App
 
         public static void ShowThinking()
         {
+            new DoublePerformanceTest().ShowResult();
             new HashCodeThinking().ShowResult();
             new LinqQuery().ShowResult();
             new PathUtil().ShowResult();
