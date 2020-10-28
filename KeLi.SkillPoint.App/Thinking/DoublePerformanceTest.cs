@@ -8,6 +8,7 @@ namespace KeLi.SkillPoint.App.Thinking
     {
         public void ShowResult()
         {
+            // The method is very inaccurate, please use benchmark test to replace it.
             Action test1 = () =>
             {
                 var _ = 0d;
