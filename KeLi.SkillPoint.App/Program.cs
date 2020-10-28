@@ -1,5 +1,7 @@
 ﻿using System;
 
+using BenchmarkDotNet.Running;
+
 using KeLi.SkillPoint.App.Arithmetic;
 using KeLi.SkillPoint.App.Syntax;
 using KeLi.SkillPoint.App.Thinking;
@@ -33,6 +35,8 @@ namespace KeLi.SkillPoint.App
 
         public static void TestDemo()
         {
+            BenchmarkRunner.Run<DoublePerformanceTest>();
+            //new DoublePerformanceTest().ShowResult();
             Console.ReadKey();
         }
 
@@ -64,7 +68,6 @@ namespace KeLi.SkillPoint.App
 
         public static void ShowThinking()
         {
-            new DoublePerformanceTest().ShowResult();
             new HashCodeThinking().ShowResult();
             new LinqQuery().ShowResult();
             new PathUtil().ShowResult();
