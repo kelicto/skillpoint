@@ -19,7 +19,7 @@
         /// </RevisionHistory>
         internal void RuleA()
         {
-            // Some code...
+            // Some codes...
         }
 
         /// <summary>
@@ -52,7 +52,7 @@
         /// </RevisionHistory>
         internal void RuleB()
         {
-            // Some code...
+            // Some codes...
         }
     }
 }
