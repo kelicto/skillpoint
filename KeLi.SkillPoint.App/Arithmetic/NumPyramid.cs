@@ -2,7 +2,7 @@
 
 namespace KeLi.SkillPoint.App.Arithmetic
 {
-    public class NumPyramid : IResult
+    internal class NumPyramid : IResult
     {
         public void ShowResult()
         {

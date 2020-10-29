@@ -48,7 +48,7 @@
 
 namespace KeLi.SkillPoint.App.Arithmetic
 {
-    public class DataExchange : IResult
+    internal class DataExchange : IResult
     {
         public void ShowResult()
         {
@@ -63,14 +63,14 @@ namespace KeLi.SkillPoint.App.Arithmetic
             SwapDataByPosition(ref c, ref d);
         }
 
-        public static void SwapDataByCoordinate(ref int num1, ref int num2)
+        internal static void SwapDataByCoordinate(ref int num1, ref int num2)
         {
             num1 = num2 - num1;
             num2 = num2 - num1;
             num1 = num2 + num1;
         }
 
-        public static void SwapDataByPosition(ref int num1, ref int num2)
+        internal static void SwapDataByPosition(ref int num1, ref int num2)
         {
             num1 = num1 ^ num2;
             num2 = num1 ^ num2;

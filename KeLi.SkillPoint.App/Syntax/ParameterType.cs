@@ -2,7 +2,7 @@
 
 namespace KeLi.SkillPoint.App.Syntax
 {
-    public class ParameterType : IResult
+    internal class ParameterType : IResult
     {
         public void ShowResult()
         {

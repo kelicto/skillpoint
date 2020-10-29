@@ -5,7 +5,7 @@ using KeLi.SkillPoint.App.Properties;
 
 namespace KeLi.SkillPoint.App.Thinking
 {
-    public class LogUsage : IResult
+    internal class LogUsage : IResult
     {
         public void ShowResult()
         {

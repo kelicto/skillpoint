@@ -2,7 +2,7 @@
 
 namespace KeLi.SkillPoint.App.Thinking
 {
-    public class XyzThinking : IResult
+    internal class XyzThinking : IResult
     {
         public void ShowResult()
         {
@@ -13,20 +13,20 @@ namespace KeLi.SkillPoint.App.Thinking
             Console.WriteLine(point2.ToString());
         }
 
-        public class Xyz
+        internal class Xyz
         {
             private readonly XyzProxy _proxy;
 
-            public Xyz(double x, double y, double z)
+            internal Xyz(double x, double y, double z)
             {
                 _proxy = new XyzProxy(x, y, z);
             }
 
-            public double X => _proxy.Px;
+            internal double X => _proxy.Px;
 
-            public double Y => _proxy.Py;
+            internal double Y => _proxy.Py;
 
-            public double Z => _proxy.Pz;
+            internal double Z => _proxy.Pz;
 
             public override string ToString()
             {
@@ -34,20 +34,20 @@ namespace KeLi.SkillPoint.App.Thinking
             }
         }
 
-        public class XyzProxy
+        internal class XyzProxy
         {
-            public XyzProxy(double x, double y, double z)
+            internal XyzProxy(double x, double y, double z)
             {
                 Px = x;
                 Py = y;
                 Pz = z;
             }
 
-            public double Px { get; set; }
+            internal double Px { get; set; }
 
-            public double Py { get; set; }
+            internal double Py { get; set; }
 
-            public double Pz { get; set; }
+            internal double Pz { get; set; }
 
             public override string ToString()
             {

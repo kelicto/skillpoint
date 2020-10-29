@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace KeLi.SkillPoint.App.Thinking
 {
-    public class PathUtil : IResult
+    internal class PathUtil : IResult
     {
         public void ShowResult()
         {

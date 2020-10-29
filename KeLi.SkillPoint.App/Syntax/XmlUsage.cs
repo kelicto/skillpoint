@@ -8,7 +8,7 @@ using KeLi.SkillPoint.App.Properties;
 
 namespace KeLi.SkillPoint.App.Syntax
 {
-    public class XmlUsage : IResult
+    internal class XmlUsage : IResult
     {
         public void ShowResult()
         {
@@ -118,37 +118,37 @@ namespace KeLi.SkillPoint.App.Syntax
         }
 
         [XmlRoot("Apples")]
-        public class Apples
+        internal class Apples
         {
-            public Apples()
+            internal Apples()
             {
                 Apps = new List<Apple>();
             }
 
-            public Apples(List<Apple> apps)
+            internal Apples(List<Apple> apps)
             {
                 Apps = apps;
             }
 
             [XmlArrayItem("Apple")]
-            public List<Apple> Apps { get; set; }
+            internal List<Apple> Apps { get; set; }
         }
 
-        public class Apple
+        internal class Apple
         {
-            public Apple()
+            internal Apple()
             {
             }
 
-            public Apple(string category, double price)
+            internal Apple(string category, double price)
             {
                 Category = category;
                 Price = price;
             }
 
-            public string Category { get; set; }
+            internal string Category { get; set; }
 
-            public double Price { get; set; }
+            internal double Price { get; set; }
         }
     }
 }

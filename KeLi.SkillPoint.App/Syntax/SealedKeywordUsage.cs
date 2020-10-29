@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KeLi.SkillPoint.App.Syntax
 {
-    public class SealedKeywordUsage
+    internal class SealedKeywordUsage
     {
         private class A
         {

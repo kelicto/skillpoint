@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace KeLi.SkillPoint.App.Thinking
 {
-    public class LoopUsage : IResult
+    internal class LoopUsage : IResult
     {
         private static int _index;
 

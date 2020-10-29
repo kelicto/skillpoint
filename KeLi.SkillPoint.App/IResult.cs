@@ -1,6 +1,6 @@
 ﻿namespace KeLi.SkillPoint.App
 {
-    public interface IResult
+    internal interface IResult
     {
         void ShowResult();
     }

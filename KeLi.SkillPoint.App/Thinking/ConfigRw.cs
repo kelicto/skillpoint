@@ -7,7 +7,7 @@ using KeLi.SkillPoint.App.Properties;
 
 namespace KeLi.SkillPoint.App.Thinking
 {
-    public class ConfigRw : IResult
+    internal class ConfigRw : IResult
     {
         public void ShowResult()
         {

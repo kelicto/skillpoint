@@ -4,7 +4,7 @@ using KeLi.SkillPoint.App.Properties;
 
 namespace KeLi.SkillPoint.App.Syntax
 {
-    public class DelegateTest : IResult
+    internal class DelegateTest : IResult
     {
         public void ShowResult()
         {
@@ -14,19 +14,19 @@ namespace KeLi.SkillPoint.App.Syntax
             dog.WatchAlarm(alarm);
         }
 
-        public class Alarm
+        internal class Alarm
         {
-            public delegate void AlarmHandler(object sender, EventArgs e);
+            internal delegate void AlarmHandler(object sender, EventArgs e);
 
-            public Alarm()
+            internal Alarm()
             {
                 Console.WriteLine("Alarm");
                 Console.WriteLine();
             }
 
-            public event AlarmHandler AlarmHandlerEvent;
+            internal event AlarmHandler AlarmHandlerEvent;
 
-            public void OnAlarm()
+            internal void OnAlarm()
             {
                 if (AlarmHandlerEvent == null)
                     return;
@@ -38,15 +38,15 @@ namespace KeLi.SkillPoint.App.Syntax
             }
         }
 
-        public class Dog
+        internal class Dog
         {
-            public Dog()
+            internal Dog()
             {
                 Console.WriteLine("Dog");
                 Console.WriteLine();
             }
 
-            public void WatchAlarm(Alarm alarm)
+            internal void WatchAlarm(Alarm alarm)
             {
                 alarm.AlarmHandlerEvent += Alarm_AlarmHandlerEvent;
 

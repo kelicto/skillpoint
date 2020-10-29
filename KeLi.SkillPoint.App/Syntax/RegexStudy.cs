@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 
 namespace KeLi.SkillPoint.App.Syntax
 {
-    public class RegexStudy : IResult
+    internal class RegexStudy : IResult
     {
         public void ShowResult()
         {
@@ -14,12 +14,12 @@ namespace KeLi.SkillPoint.App.Syntax
             ContainsBirthday("19221123");
         }
 
-        public static List<int> MatchNums(string testStr)
+        internal static List<int> MatchNums(string testStr)
         {
             return Regex.Matches(testStr, @"\d+").Cast<Match>().Select(s => int.Parse(s.Value)).ToList();
         }
 
-        public static bool ContainsBirthday(string pwd)
+        internal static bool ContainsBirthday(string pwd)
         {
             var reg1 = new Regex(@"\d{4}");
             var reg2 = new Regex(@"\d{3}");
@@ -32,7 +32,7 @@ namespace KeLi.SkillPoint.App.Syntax
             return m1 || m2 || m3;
         }
 
-        public static string CreateMaxNameNum(string viewName, string seperateChar, string[] viewNames)
+        internal static string CreateMaxNameNum(string viewName, string seperateChar, string[] viewNames)
         {
             var baseReg = new Regex($@"^(.+){seperateChar}(\d+)$");
             var rawViewName = viewName;

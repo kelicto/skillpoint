@@ -4,7 +4,7 @@ using KeLi.SkillPoint.App.Properties;
 
 namespace KeLi.SkillPoint.App.Thinking
 {
-    public class EndianUsage : IResult
+    internal class EndianUsage : IResult
     {
         public void ShowResult()
         {

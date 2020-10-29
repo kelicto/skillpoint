@@ -2,7 +2,7 @@
 
 namespace KeLi.SkillPoint.App.Arithmetic
 {
-    public class LineRelationship : IResult
+    internal class LineRelationship : IResult
     {
         public void ShowResult()
         {
@@ -51,17 +51,17 @@ namespace KeLi.SkillPoint.App.Arithmetic
             return v7 && o8;
         }
 
-        public class Point
+        internal class Point
         {
-            public Point(double x, double y)
+            internal Point(double x, double y)
             {
                 X = x;
                 Y = y;
             }
 
-            public double X { get; set; }
+            internal double X { get; set; }
 
-            public double Y { get; set; }
+            internal double Y { get; set; }
         }
     }
 }

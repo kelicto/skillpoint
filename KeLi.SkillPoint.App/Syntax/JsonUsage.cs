@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 
 namespace KeLi.SkillPoint.App.Syntax
 {
-    public class JsonUsage : IResult
+    internal class JsonUsage : IResult
     {
         public void ShowResult()
         {

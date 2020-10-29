@@ -2,7 +2,7 @@
 
 namespace KeLi.SkillPoint.App.Syntax
 {
-    public class BitOperator : IResult
+    internal class BitOperator : IResult
     {
         public void ShowResult()
         {

@@ -6,7 +6,7 @@ namespace KeLi.SkillPoint.App.Thinking
     /// <summary>
     ///     Fibonacci sequence.
     /// </summary>
-    public class FibonacciSequence : IResult
+    internal class FibonacciSequence : IResult
     {
         private static readonly ulong[] _cache = { 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89 };
 
@@ -152,7 +152,7 @@ namespace KeLi.SkillPoint.App.Thinking
         /// </summary>
         /// <param name="index"></param>
         /// <returns></returns>
-        public static BigInteger GetBase0(int index)
+        internal static BigInteger GetBase0(int index)
         {
             if (index < _cache.Length - 1)
                 return _cache[index];
@@ -179,7 +179,7 @@ namespace KeLi.SkillPoint.App.Thinking
         /// </summary>
         /// <param name="index"></param>
         /// <returns></returns>
-        public static BigInteger GetBase1(int index)
+        internal static BigInteger GetBase1(int index)
         {
             BigInteger result = 0;
             BigInteger first = 1;
@@ -200,7 +200,7 @@ namespace KeLi.SkillPoint.App.Thinking
         /// </summary>
         /// <param name="index"></param>
         /// <returns></returns>
-        public static double GetBase2(int index)
+        internal static double GetBase2(int index)
         {
             if (index == 0 || index == 1)
                 return 1;
@@ -213,7 +213,7 @@ namespace KeLi.SkillPoint.App.Thinking
         /// </summary>
         /// <param name="index"></param>
         /// <returns></returns>
-        public static double GetBase3(int index)
+        internal static double GetBase3(int index)
         {
             return 1 / Math.Sqrt(5) * (Math.Pow((1 + Math.Sqrt(5)) / 2, index) - Math.Pow((1 - Math.Sqrt(5)) / 2, index));
         }
@@ -223,7 +223,7 @@ namespace KeLi.SkillPoint.App.Thinking
         /// </summary>
         /// <param name="index"></param>
         /// <returns></returns>
-        public static double GetFeature1(int index)
+        internal static double GetFeature1(int index)
         {
             double result = 0;
 
@@ -238,7 +238,7 @@ namespace KeLi.SkillPoint.App.Thinking
         /// </summary>
         /// <param name="index"></param>
         /// <returns></returns>
-        public static double GetFeature2(int index)
+        internal static double GetFeature2(int index)
         {
             double result = 0;
 
@@ -253,7 +253,7 @@ namespace KeLi.SkillPoint.App.Thinking
         /// </summary>
         /// <param name="index"></param>
         /// <returns></returns>
-        public static double GetFeature3(int index)
+        internal static double GetFeature3(int index)
         {
             double result = 0;
 
@@ -268,7 +268,7 @@ namespace KeLi.SkillPoint.App.Thinking
         /// </summary>
         /// <param name="index"></param>
         /// <returns></returns>
-        public static double GetFeature4(int index)
+        internal static double GetFeature4(int index)
         {
             double result = 0;
 
@@ -283,7 +283,7 @@ namespace KeLi.SkillPoint.App.Thinking
         /// </summary>
         /// <param name="index"></param>
         /// <returns></returns>
-        public static double GetFeature5(int index)
+        internal static double GetFeature5(int index)
         {
             double result = 0;
 
@@ -299,7 +299,7 @@ namespace KeLi.SkillPoint.App.Thinking
         /// <param name="num1"></param>
         /// <param name="num2"></param>
         /// <returns></returns>
-        public static double GetFeature6(int num1, int num2)
+        internal static double GetFeature6(int num1, int num2)
         {
             return GetBase2(num1 - 1) * GetBase2(num2 - 1);
         }
@@ -309,7 +309,7 @@ namespace KeLi.SkillPoint.App.Thinking
         /// </summary>
         /// <param name="num"></param>
         /// <returns></returns>
-        public static double GetFeature7(int num)
+        internal static double GetFeature7(int num)
         {
             return Math.Pow(-1, num - 1) + GetBase2(num - 1) * GetBase2(num + 1);
         }
@@ -319,7 +319,7 @@ namespace KeLi.SkillPoint.App.Thinking
         /// </summary>
         /// <param name="num"></param>
         /// <returns></returns>
-        public static double GetFeature8(int num)
+        internal static double GetFeature8(int num)
         {
             return Math.Pow(GetBase2(num), 2) + Math.Pow(GetBase2(num - 2), 2);
         }
@@ -329,7 +329,7 @@ namespace KeLi.SkillPoint.App.Thinking
         /// </summary>
         /// <param name="num"></param>
         /// <returns></returns>
-        public static double GetFeature9(int num)
+        internal static double GetFeature9(int num)
         {
             return GetBase2(num - 2) + GetBase2(num + 2);
         }
@@ -340,7 +340,7 @@ namespace KeLi.SkillPoint.App.Thinking
         /// <param name="num1"></param>
         /// <param name="num2"></param>
         /// <returns></returns>
-        public static double GetFeature10(int num1, int num2)
+        internal static double GetFeature10(int num1, int num2)
         {
             return GetBase2(2 * num2 - 2 * num1 - 2) * (GetBase2(2 * num1 + 2) + GetBase2(4 * num2 - 2 * num1));
         }

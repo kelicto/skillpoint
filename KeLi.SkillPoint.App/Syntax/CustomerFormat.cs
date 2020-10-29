@@ -2,7 +2,7 @@
 
 namespace KeLi.SkillPoint.App.Syntax
 {
-    public class CustomerFormat : IResult, IFormatProvider, ICustomFormatter
+    internal class CustomerFormat : IResult, IFormatProvider, ICustomFormatter
     {
         public string Format(string format, object arg, IFormatProvider provider)
         {

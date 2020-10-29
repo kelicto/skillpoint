@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace KeLi.SkillPoint.App.Thinking
 {
-    public class TeacherData : IResult
+    internal class TeacherData : IResult
     {
         public void ShowResult()
         {
@@ -18,7 +18,7 @@ namespace KeLi.SkillPoint.App.Thinking
             }
         }
 
-        public static TeacherModelCollection GetTeacherModels()
+        internal static TeacherModelCollection GetTeacherModels()
         {
             var cc1 = new ClassroomInfoCollection
             {
@@ -87,7 +87,7 @@ namespace KeLi.SkillPoint.App.Thinking
         }
     }
 
-    public class TeacherModelCollection : KeyedCollection<string, TeacherModel>
+    internal class TeacherModelCollection : KeyedCollection<string, TeacherModel>
     {
         protected override string GetKeyForItem(TeacherModel item)
         {
@@ -95,23 +95,23 @@ namespace KeLi.SkillPoint.App.Thinking
         }
     }
 
-    public class TeacherModel
+    internal class TeacherModel
     {
-        public TeacherModel(string teacherId, ClassroomInfoCollection classrooms, StudentInfoCollection students)
+        internal TeacherModel(string teacherId, ClassroomInfoCollection classrooms, StudentInfoCollection students)
         {
             TeacherId = teacherId;
             Classrooms = classrooms;
             Students = students;
         }
 
-        public string TeacherId { get; set; }
+        internal string TeacherId { get; set; }
 
-        public ClassroomInfoCollection Classrooms { get; set; }
+        internal ClassroomInfoCollection Classrooms { get; set; }
 
-        public StudentInfoCollection Students { get; set; }
+        internal StudentInfoCollection Students { get; set; }
     }
 
-    public class StudentInfoCollection : KeyedCollection<string, StudentInfo>
+    internal class StudentInfoCollection : KeyedCollection<string, StudentInfo>
     {
         protected override string GetKeyForItem(StudentInfo item)
         {
@@ -119,7 +119,7 @@ namespace KeLi.SkillPoint.App.Thinking
         }
     }
 
-    public class TeacherInfoCollection : KeyedCollection<string, TeacherInfo>
+    internal class TeacherInfoCollection : KeyedCollection<string, TeacherInfo>
     {
         protected override string GetKeyForItem(TeacherInfo item)
         {
@@ -127,7 +127,7 @@ namespace KeLi.SkillPoint.App.Thinking
         }
     }
 
-    public class ClassroomInfoCollection : KeyedCollection<string, ClassroomInfo>
+    internal class ClassroomInfoCollection : KeyedCollection<string, ClassroomInfo>
     {
         protected override string GetKeyForItem(ClassroomInfo item)
         {
@@ -135,48 +135,48 @@ namespace KeLi.SkillPoint.App.Thinking
         }
     }
 
-    public class StudentInfo
+    internal class StudentInfo
     {
-        public StudentInfo(string studentId, string studentName, string classroomId)
+        internal StudentInfo(string studentId, string studentName, string classroomId)
         {
             StudentId = studentId;
             StudentName = studentName;
             ClassroomId = classroomId;
         }
 
-        public string StudentId { get; set; }
+        internal string StudentId { get; set; }
 
-        public string StudentName { get; set; }
+        internal string StudentName { get; set; }
 
-        public string ClassroomId { get; set; }
+        internal string ClassroomId { get; set; }
     }
 
-    public class TeacherInfo
+    internal class TeacherInfo
     {
-        public TeacherInfo(string teacherId, string teacherName, ClassroomInfoCollection belongClassrooms)
+        internal TeacherInfo(string teacherId, string teacherName, ClassroomInfoCollection belongClassrooms)
         {
             TeacherId = teacherId;
             TeacherName = teacherName;
             BelongClassrooms = belongClassrooms;
         }
 
-        public string TeacherId { get; set; }
+        internal string TeacherId { get; set; }
 
-        public string TeacherName { get; set; }
+        internal string TeacherName { get; set; }
 
-        public ClassroomInfoCollection BelongClassrooms { get; set; }
+        internal ClassroomInfoCollection BelongClassrooms { get; set; }
     }
 
-    public class ClassroomInfo
+    internal class ClassroomInfo
     {
-        public ClassroomInfo(string classroomId, string classroomName)
+        internal ClassroomInfo(string classroomId, string classroomName)
         {
             ClassroomId = classroomId;
             ClassroomName = classroomName;
         }
 
-        public string ClassroomId { get; set; }
+        internal string ClassroomId { get; set; }
 
-        public string ClassroomName { get; set; }
+        internal string ClassroomName { get; set; }
     }
 }

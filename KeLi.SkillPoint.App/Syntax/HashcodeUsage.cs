@@ -5,7 +5,7 @@ using KeLi.SkillPoint.App.Properties;
 
 namespace KeLi.SkillPoint.App.Syntax
 {
-    public class HashcodeUsage : IResult
+    internal class HashcodeUsage : IResult
     {
         public void ShowResult()
         {
@@ -32,17 +32,17 @@ namespace KeLi.SkillPoint.App.Syntax
             Console.WriteLine();
         }
 
-        public class Point
+        internal class Point
         {
-            public Point(int x, int y)
+            internal Point(int x, int y)
             {
                 X = x;
                 Y = y;
             }
 
-            public int X { get; }
+            internal int X { get; }
 
-            public int Y { get; }
+            internal int Y { get; }
 
             public override bool Equals(object obj)
             {

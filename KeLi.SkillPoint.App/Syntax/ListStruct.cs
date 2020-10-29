@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace KeLi.SkillPoint.App.Syntax
 {
-    public class ListStruct : IResult
+    internal class ListStruct : IResult
     {
         public void ShowResult()
         {

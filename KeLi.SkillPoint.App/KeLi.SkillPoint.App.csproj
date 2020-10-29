@@ -40,6 +40,9 @@
     <DocumentationFile>
     </DocumentationFile>
   </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="BenchmarkDotNet, Version=0.12.1.0, Culture=neutral, PublicKeyToken=aa0ca2f9092cefc4, processorArchitecture=MSIL">
       <HintPath>..\packages\BenchmarkDotNet.0.12.1\lib\netstandard2.0\BenchmarkDotNet.dll</HintPath>
@@ -250,6 +253,7 @@
     <Compile Include="Thinking\ConfigRw.cs" />
     <Compile Include="Syntax\PropertyStudy.cs" />
     <Compile Include="IResult.cs" />
+    <Compile Include="Thinking\DoubleDanger.cs" />
     <Compile Include="Thinking\DoublePerformanceTest.cs" />
     <Compile Include="Thinking\HashCodeThinking.cs" />
     <Compile Include="Thinking\LinqQuery.cs" />

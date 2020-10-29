@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace KeLi.SkillPoint.App.Thinking
 {
-    public class HashCodeThinking : IResult
+    internal class HashCodeThinking : IResult
     {
         public void ShowResult()
         {
@@ -12,7 +12,7 @@ namespace KeLi.SkillPoint.App.Thinking
             Test2();
         }
 
-        public void Test1()
+        internal void Test1()
         {
             try
             {
@@ -41,7 +41,7 @@ namespace KeLi.SkillPoint.App.Thinking
             }
         }
 
-        public void Test2()
+        internal void Test2()
         {
             try
             {
@@ -96,22 +96,22 @@ namespace KeLi.SkillPoint.App.Thinking
 
         private class TestItem
         {
-            public TestItem(TestModel id)
+            internal TestItem(TestModel id)
             {
                 Id = id;
             }
 
-            public TestModel Id { get; }
+            internal TestModel Id { get; }
         }
 
         private class TestModel
         {
-            public TestModel(int id)
+            internal TestModel(int id)
             {
                 Id = id;
             }
 
-            public int Id { get; }
+            internal int Id { get; }
         }
 
         private class TestModelComparer : IEqualityComparer<TestModel>

@@ -6,7 +6,7 @@ using KeLi.SkillPoint.App.Properties;
 
 namespace KeLi.SkillPoint.App.Thinking
 {
-    public class LinqThinking : IResult
+    internal class LinqThinking : IResult
     {
         public void ShowResult()
         {
@@ -14,7 +14,7 @@ namespace KeLi.SkillPoint.App.Thinking
             DestroySearch();
         }
 
-        public static void SearchData()
+        internal static void SearchData()
         {
             var names = GetNames();
 
@@ -42,7 +42,7 @@ namespace KeLi.SkillPoint.App.Thinking
             name3S.ToList().ForEach(Console.WriteLine);
         }
 
-        public static void DestroySearch()
+        internal static void DestroySearch()
         {
             var names = GetNames();
 

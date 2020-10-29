@@ -2,7 +2,7 @@
 
 namespace KeLi.SkillPoint.App.Syntax
 {
-    public class FuncDelegation : IResult
+    internal class FuncDelegation : IResult
     {
         public void ShowResult()
         {

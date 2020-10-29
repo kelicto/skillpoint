@@ -51,7 +51,7 @@ using System.Linq;
 
 namespace KeLi.SkillPoint.App.Arithmetic
 {
-    public class GroupingUsage : IResult
+    internal class GroupingUsage : IResult
     {
         private static double Lvl => 3.0;
 

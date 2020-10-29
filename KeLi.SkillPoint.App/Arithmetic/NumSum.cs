@@ -5,7 +5,7 @@ using KeLi.SkillPoint.App.Properties;
 
 namespace KeLi.SkillPoint.App.Arithmetic
 {
-    public class NumSum : IResult
+    internal class NumSum : IResult
     {
         public void ShowResult()
         {

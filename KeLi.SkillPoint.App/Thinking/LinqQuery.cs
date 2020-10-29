@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace KeLi.SkillPoint.App.Thinking
 {
-    public class LinqQuery : IResult
+    internal class LinqQuery : IResult
     {
         public void ShowResult()
         {

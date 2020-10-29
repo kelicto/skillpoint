@@ -4,7 +4,7 @@ using KeLi.SkillPoint.App.Properties;
 
 namespace KeLi.SkillPoint.App.Thinking
 {
-    public class PriorityUsage : IResult
+    internal class PriorityUsage : IResult
     {
         public void ShowResult()
         {

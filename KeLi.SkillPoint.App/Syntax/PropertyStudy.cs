@@ -54,52 +54,52 @@ namespace KeLi.SkillPoint.App.Syntax
     /// <summary>
     ///     Property study.
     /// </summary>
-    public class PropertyStudy : IResult
+    internal class PropertyStudy : IResult
     {
         /// <summary>
         ///     Readonly property, the class inner can modify it.
         /// </summary>
-        public static List<int> Uvs1 { get; private set; }
+        internal static List<int> Uvs1 { get; private set; }
 
         /// <summary>
         ///     Readonly property, no area can modify it.
         /// </summary>
-        public static List<int> Uvs2 { get; }
+        internal static List<int> Uvs2 { get; }
 
         /// <summary>
         ///     Readonly property, the class inner can modify it.
         /// </summary>
-        public static List<int> Uvs3 { get; private set; } = new List<int>();
+        internal static List<int> Uvs3 { get; private set; } = new List<int>();
 
         /// <summary>
         ///     Readonly property, init it and no area can modify it.
         /// </summary>
-        public static List<int> Uvs4 { get; } = new List<int>();
+        internal static List<int> Uvs4 { get; } = new List<int>();
 
         /// <summary>
         ///     Readonly property, init it and no area can modify it.
         /// </summary>
-        public static List<int> Uvs5 => new List<int>();
+        internal static List<int> Uvs5 => new List<int>();
 
         /// <summary>
         ///     Writeonly property, no area can read it.
         /// </summary>
-        public static List<int> Uvs6 { private get; set; }
+        internal static List<int> Uvs6 { private get; set; }
 
         /// <summary>
         ///     Writeonly property, init it and the class inner can read it.
         /// </summary>
-        public static List<int> Uvs7 { private get; set; } = new List<int>();
+        internal static List<int> Uvs7 { private get; set; } = new List<int>();
 
         /// <summary>
         ///     It can get or set value.
         /// </summary>
-        public static List<int> Uvs8 { get; set; }
+        internal static List<int> Uvs8 { get; set; }
 
         /// <summary>
         ///     It can get or set value and init value.
         /// </summary>
-        public static List<int> Uvs9 { get; set; } = new List<int>();
+        internal static List<int> Uvs9 { get; set; } = new List<int>();
 
         /// <summary>
         ///     Shows property result.
@@ -113,7 +113,7 @@ namespace KeLi.SkillPoint.App.Syntax
         /// <summary>
         ///     Tests property in my class.
         /// </summary>
-        public static void TestPropertyMyClass()
+        internal static void TestPropertyMyClass()
         {
             Uvs1 = new List<int>();
 
@@ -142,12 +142,12 @@ namespace KeLi.SkillPoint.App.Syntax
     /// <summary>
     ///     Propery access test class.
     /// </summary>
-    public class PropertyTestClass
+    internal class PropertyTestClass
     {
         /// <summary>
         ///     Tests property in other class.
         /// </summary>
-        public static void TestPropertyInOtherClass()
+        internal static void TestPropertyInOtherClass()
         {
             // PropertyStudy.Uvs1 = new List<int>();
             // PropertyStudy.Uvs2 = new List<int>();

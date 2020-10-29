@@ -2,7 +2,7 @@
 
 namespace KeLi.SkillPoint.App.Syntax
 {
-    public class OperatorUsage : IResult
+    internal class OperatorUsage : IResult
     {
         public void ShowResult()
         {
@@ -13,17 +13,17 @@ namespace KeLi.SkillPoint.App.Syntax
             Console.WriteLine(c);
         }
 
-        public class Student
+        internal class Student
         {
-            public Student(int chinese, int math)
+            internal Student(int chinese, int math)
             {
                 Chinese = chinese;
                 Math = math;
             }
 
-            public int Chinese { get; set; }
+            internal int Chinese { get; set; }
 
-            public int Math { get; set; }
+            internal int Math { get; set; }
 
             public static Student operator +(Student a, Student b)
             {

@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace KeLi.SkillPoint.App.Thinking
 {
-    public class UvSort : IResult
+    internal class UvSort : IResult
     {
         public void ShowResult()
         {
@@ -14,7 +14,7 @@ namespace KeLi.SkillPoint.App.Thinking
             uvs.Sort(new UvCompare());
         }
 
-        public static List<Uv> SortUvs(List<Uv> uvs)
+        internal static List<Uv> SortUvs(List<Uv> uvs)
         {
             List<Uv> results;
 
@@ -27,7 +27,7 @@ namespace KeLi.SkillPoint.App.Thinking
             return results;
         }
 
-        public class UvCompare : IComparer<Uv>
+        internal class UvCompare : IComparer<Uv>
         {
             public int Compare(Uv p1, Uv p2)
             {
@@ -58,17 +58,17 @@ namespace KeLi.SkillPoint.App.Thinking
             }
         }
 
-        public class Uv
+        internal class Uv
         {
-            public Uv(double u, double v)
+            internal Uv(double u, double v)
             {
                 U = u;
                 V = v;
             }
 
-            public double U { get; }
+            internal double U { get; }
 
-            public double V { get; }
+            internal double V { get; }
         }
     }
 }

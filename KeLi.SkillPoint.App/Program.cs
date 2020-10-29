@@ -8,9 +8,9 @@ using KeLi.SkillPoint.App.Thinking;
 
 namespace KeLi.SkillPoint.App
 {
-    public class Program
+    internal class Program
     {
-        public static void Main()
+        internal static void Main()
         {
             Console.Title = "Skill Point";
             Console.WindowWidth = 100;
@@ -33,14 +33,12 @@ namespace KeLi.SkillPoint.App
             Console.ReadKey();
         }
 
-        public static void TestDemo()
+        internal static void TestDemo()
         {
-            BenchmarkRunner.Run<DoublePerformanceTest>();
-            //new DoublePerformanceTest().ShowResult();
             Console.ReadKey();
         }
 
-        public static void ShowArithmetic()
+        internal static void ShowArithmetic()
         {
             new DataExchange().ShowResult();
             new GroupingUsage().ShowResult();
@@ -49,7 +47,7 @@ namespace KeLi.SkillPoint.App
             new NumPyramid().ShowResult();
         }
 
-        public static void ShowSyntax()
+        internal static void ShowSyntax()
         {
             new RegexStudy().ShowResult();
             new PropertyStudy().ShowResult();
@@ -66,8 +64,10 @@ namespace KeLi.SkillPoint.App
             new DelegateTest().ShowResult();
         }
 
-        public static void ShowThinking()
+        internal static void ShowThinking()
         {
+            new DoubleDanger().ShowResult();
+            new DoublePerformanceTest().ShowResult();
             new HashCodeThinking().ShowResult();
             new LinqQuery().ShowResult();
             new PathUtil().ShowResult();

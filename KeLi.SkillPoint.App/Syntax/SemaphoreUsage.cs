@@ -5,7 +5,7 @@ using KeLi.SkillPoint.App.Properties;
 
 namespace KeLi.SkillPoint.App.Syntax
 {
-    public class SemaphoreUsage : IResult
+    internal class SemaphoreUsage : IResult
     {
         private static readonly Semaphore _semaphore = new Semaphore(5, 15);
 

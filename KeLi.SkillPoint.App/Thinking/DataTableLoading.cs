@@ -7,7 +7,7 @@ using KeLi.SkillPoint.App.Properties;
 
 namespace KeLi.SkillPoint.App.Thinking
 {
-    public class DataTableLoading : IResult
+    internal class DataTableLoading : IResult
     {
         public void ShowResult()
         {

@@ -3,7 +3,7 @@
     /// <summary>
     ///     Class comment standard.
     /// </summary>
-    public class ClassCommentStandard
+    internal class ClassCommentStandard
     {
         /// <summary>
         ///     It's for Rule A.
@@ -17,7 +17,7 @@
         ///         </Reason>
         ///     </RevisionItem>
         /// </RevisionHistory>
-        public void RuleA()
+        internal void RuleA()
         {
             // Some code...
         }
@@ -50,7 +50,7 @@
         ///         </Reason>
         ///     </RevisionItem>
         /// </RevisionHistory>
-        public void RuleB()
+        internal void RuleB()
         {
             // Some code...
         }

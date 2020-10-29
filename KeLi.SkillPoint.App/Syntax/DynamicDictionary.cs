@@ -4,11 +4,11 @@ using System.Dynamic;
 
 namespace KeLi.SkillPoint.App.Syntax
 {
-    public class DynamicDictionary : DynamicObject, IResult
+    internal class DynamicDictionary : DynamicObject, IResult
     {
         private readonly Dictionary<string, object> _dict = new Dictionary<string, object>();
 
-        public int Count => _dict.Count;
+        internal int Count => _dict.Count;
 
         public void ShowResult()
         {
@@ -28,7 +28,7 @@ namespace KeLi.SkillPoint.App.Syntax
             return true;
         }
 
-        public static void TestExpandoObject()
+        internal static void TestExpandoObject()
         {
             dynamic dyn = new ExpandoObject();
 
@@ -39,7 +39,7 @@ namespace KeLi.SkillPoint.App.Syntax
             Console.WriteLine(dyn.Method(dyn.Number));
         }
 
-        public static void TestDynamicObject()
+        internal static void TestDynamicObject()
         {
             dynamic person = new DynamicDictionary();
 
