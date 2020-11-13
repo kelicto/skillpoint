@@ -1,7 +1,5 @@
 ﻿using System;
 
-using BenchmarkDotNet.Running;
-
 using KeLi.SkillPoint.App.Arithmetic;
 using KeLi.SkillPoint.App.Syntax;
 using KeLi.SkillPoint.App.Thinking;
@@ -35,6 +33,7 @@ namespace KeLi.SkillPoint.App
 
         internal static void TestDemo()
         {
+            new LinqQuery().ShowResult();
             Console.ReadKey();
         }
 
