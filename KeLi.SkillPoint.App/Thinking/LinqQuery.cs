@@ -21,7 +21,7 @@ namespace KeLi.SkillPoint.App.Thinking
         [Benchmark(Description = "First")]
         public void Test1()
         {
-            var data = GetTestData(1000, Test);
+            var data = GetTestData(100000, Test);
 
             data.First(f => f == Test);
         }
@@ -29,7 +29,7 @@ namespace KeLi.SkillPoint.App.Thinking
         [Benchmark(Description = "FirstOrDefault")]
         public void Test2()
         {
-            var data = GetTestData(1000, Test);
+            var data = GetTestData(100000, Test);
 
             data.FirstOrDefault(f => f == Test);
         }
@@ -37,7 +37,7 @@ namespace KeLi.SkillPoint.App.Thinking
         [Benchmark(Description = "Contains")]
         public void Test3()
         {
-            var data = GetTestData(1000, Test);
+            var data = GetTestData(100000, Test);
 
             data.Contains(Test);
         }
@@ -45,7 +45,7 @@ namespace KeLi.SkillPoint.App.Thinking
         [Benchmark(Description = "Find")]
         public void Test4()
         {
-            var data = GetTestData(1000, Test);
+            var data = GetTestData(100000, Test);
 
             data.Find(f => f == Test);
         }
@@ -53,7 +53,7 @@ namespace KeLi.SkillPoint.App.Thinking
         [Benchmark(Description = "FindIndex")]
         public void Test5()
         {
-            var data = GetTestData(1000, Test);
+            var data = GetTestData(100000, Test);
 
             data.FindIndex(0, f => f == Test);
         }
@@ -61,7 +61,7 @@ namespace KeLi.SkillPoint.App.Thinking
         [Benchmark(Description = "Exists")]
         public void Test6()
         {
-            var data = GetTestData(1000, Test);
+            var data = GetTestData(100000, Test);
 
             data.Exists(e => e == Test);
         }
@@ -69,7 +69,7 @@ namespace KeLi.SkillPoint.App.Thinking
         [Benchmark(Description = "Any")]
         public void Test7()
         {
-            var data = GetTestData(1000, Test);
+            var data = GetTestData(100000, Test);
 
             data.Any(a => a == Test);
         }
