@@ -5,61 +5,73 @@ using System.Linq;
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Running;
 
+// ReSharper disable All
+
 namespace KeLi.SkillPoint.App.Thinking
 {
     public class LinqQuery : IResult
     {
-        private List<string> _data;
-
         private const string Test = "Hello";
 
         public void ShowResult()
         {
-            _data = GetTestData(100000, Test);
-
             BenchmarkRunner.Run<LinqQuery>();
         }
 
-        [Benchmark]
-        public bool Test1()
+        [Benchmark(Description = "First")]
+        public void Test1()
         {
-            return _data.First(f => f == Test) != null;
+            var data = GetTestData(1000, Test);
+
+            data.First(f => f == Test);
         }
 
-        [Benchmark]
-        public bool Test2()
+        [Benchmark(Description = "FirstOrDefault")]
+        public void Test2()
         {
-           return _data.FirstOrDefault(f => f == Test) != null;
+            var data = GetTestData(1000, Test);
+
+            data.FirstOrDefault(f => f == Test);
         }
 
-        [Benchmark]
-        public bool Test3()
+        [Benchmark(Description = "Contains")]
+        public void Test3()
         {
-            return _data.Contains(Test);
+            var data = GetTestData(1000, Test);
+
+            data.Contains(Test);
         }
 
-        [Benchmark]
-        public bool Test4()
+        [Benchmark(Description = "Find")]
+        public void Test4()
         {
-            return _data.Find(f => f == Test) != null;
+            var data = GetTestData(1000, Test);
+
+            data.Find(f => f == Test);
         }
 
-        [Benchmark]
-        public bool Test5()
+        [Benchmark(Description = "FindIndex")]
+        public void Test5()
         {
-            return _data.FindIndex(0, f => f == Test) != -1;
+            var data = GetTestData(1000, Test);
+
+            data.FindIndex(0, f => f == Test);
         }
 
-        [Benchmark]
-        public bool Test6()
+        [Benchmark(Description = "Exists")]
+        public void Test6()
         {
-            return _data.Exists(e => e == Test);
+            var data = GetTestData(1000, Test);
+
+            data.Exists(e => e == Test);
         }
 
-        [Benchmark]
-        public bool Test7()
+        [Benchmark(Description = "Any")]
+        public void Test7()
         {
-           return _data.Any(a => a == Test);
+            var data = GetTestData(1000, Test);
+
+            data.Any(a => a == Test);
         }
 
         private static List<string> GetTestData(int num, string test)

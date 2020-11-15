@@ -17,9 +17,9 @@ namespace KeLi.SkillPoint.App
             try
             {
                 TestDemo();
-                ShowArithmetic();
-                ShowSyntax();
-                ShowThinking();
+                //ShowArithmetic();
+                //ShowSyntax();
+                //ShowThinking();
             }
             catch (Exception ex)
             {
@@ -33,8 +33,9 @@ namespace KeLi.SkillPoint.App
 
         internal static void TestDemo()
         {
+            //new DoublePerformanceTest().ShowResult();
             new LinqQuery().ShowResult();
-            Console.ReadKey();
+            //Console.ReadKey();
         }
 
         internal static void ShowArithmetic()
