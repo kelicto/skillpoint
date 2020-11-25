@@ -1,7 +1,5 @@
-﻿using System;
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Running;
-using KeLi.Power.Tool;
 
 namespace KeLi.SkillPoint.App.Thinking
 {

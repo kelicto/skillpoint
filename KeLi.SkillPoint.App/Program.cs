@@ -17,15 +17,10 @@ namespace KeLi.SkillPoint.App
             try
             {
                 TestDemo();
-                //ShowArithmetic();
-                //ShowSyntax();
-                //ShowThinking();
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error Message: " + ex.Message);
-                Console.WriteLine("Stack Message: " + ex.StackTrace);
-                Console.WriteLine();
+                Console.WriteLine(ex.ToString());
             }
 
             Console.ReadKey();
@@ -33,9 +28,13 @@ namespace KeLi.SkillPoint.App
 
         internal static void TestDemo()
         {
-            //new DoublePerformanceTest().ShowResult();
-            new LinqQuery().ShowResult();
-            //Console.ReadKey();
+            const string test = "Hello, world!";
+
+            if (test.Length > 10)
+                Console.WriteLine(">10.");
+
+            else
+                Console.WriteLine("<=10");
         }
 
         internal static void ShowArithmetic()
@@ -69,7 +68,7 @@ namespace KeLi.SkillPoint.App
             new DoubleDanger().ShowResult();
             new DoublePerformanceTest().ShowResult();
             new HashCodeThinking().ShowResult();
-            new LinqQuery().ShowResult();
+            new LinqQueryPerformanceTest().ShowResult();
             new PathUtil().ShowResult();
             new BitOperator().ShowResult();
             new TeacherData().ShowResult();

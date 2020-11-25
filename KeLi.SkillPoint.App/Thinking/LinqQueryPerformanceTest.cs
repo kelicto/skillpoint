@@ -9,13 +9,13 @@ using BenchmarkDotNet.Running;
 
 namespace KeLi.SkillPoint.App.Thinking
 {
-    public class LinqQuery : IResult
+    public class LinqQueryPerformanceTest : IResult
     {
         private const string Test = "Hello";
 
         public void ShowResult()
         {
-            BenchmarkRunner.Run<LinqQuery>();
+            BenchmarkRunner.Run<LinqQueryPerformanceTest>();
         }
 
         [Benchmark(Description = "First")]
