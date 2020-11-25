@@ -28,13 +28,6 @@ namespace KeLi.SkillPoint.App
 
         internal static void TestDemo()
         {
-            const string test = "Hello, world!";
-
-            if (test.Length > 10)
-                Console.WriteLine(">10.");
-
-            else
-                Console.WriteLine("<=10");
         }
 
         internal static void ShowArithmetic()
