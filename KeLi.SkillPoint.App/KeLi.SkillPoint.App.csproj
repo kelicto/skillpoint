@@ -155,73 +155,50 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Arithmetic\DataExchange.cs" />
-    <Compile Include="Arithmetic\GroupingUsage.cs" />
-    <Compile Include="Arithmetic\LineRelationship.cs" />
-    <Compile Include="Arithmetic\NumPyramid.cs" />
-    <Compile Include="Arithmetic\NumSum.cs" />
-    <Compile Include="Syntax\RegexStudy.cs" />
+    <Compile Include="Problems\DataExchangeProblem.cs" />
+    <Compile Include="Problems\LineRelationshipProblem.cs" />
+    <Compile Include="Problems\NumPyramidProblem.cs" />
+    <Compile Include="Problems\NumSumProblem.cs" />
+    <Compile Include="Problems\RegexProblem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Syntax\BitOperator.cs" />
-    <Compile Include="Syntax\DynamicDictionary.cs" />
-    <Compile Include="Syntax\ListStruct.cs" />
-    <Compile Include="Syntax\SealedKeywordUsage.cs" />
-    <Compile Include="Thinking\ClassCommentStandard.cs" />
-    <Compile Include="Thinking\ConfigRw.cs" />
-    <Compile Include="Syntax\PropertyStudy.cs" />
+    <Compile Include="Usages\BitOperatorUsage.cs" />
+    <Compile Include="Usages\DynamicDictionaryUsage.cs" />
+    <Compile Include="Problems\DataCollectionProblem.cs" />
+    <Compile Include="Usages\SealedKeywordUsage.cs" />
+    <Compile Include="Tests\PropertyTest.cs" />
     <Compile Include="IResult.cs" />
-    <Compile Include="Thinking\DoubleDanger.cs" />
-    <Compile Include="Thinking\DoublePerformanceTest.cs" />
-    <Compile Include="Thinking\HashCodeThinking.cs" />
-    <Compile Include="Thinking\LinqQueryPerformanceTest.cs" />
-    <Compile Include="Thinking\LinqThinking.cs" />
-    <Compile Include="Thinking\DataTableLoading.cs" />
-    <Compile Include="Thinking\LogUsage.cs" />
-    <Compile Include="Syntax\CustomerFormat.cs" />
-    <Compile Include="Syntax\DelegateTest.cs" />
-    <Compile Include="Syntax\FuncDelegation.cs" />
-    <Compile Include="Syntax\HashcodeUsage.cs" />
-    <Compile Include="Syntax\JsonUsage.cs" />
-    <Compile Include="Syntax\OperatorUsage.cs" />
-    <Compile Include="Syntax\ParameterType.cs" />
-    <Compile Include="Syntax\SemaphoreUsage.cs" />
-    <Compile Include="Syntax\XmlUsage.cs" />
-    <Compile Include="Thinking\EndianUsage.cs" />
-    <Compile Include="Thinking\FibonacciSequence.cs" />
-    <Compile Include="Thinking\LoopUsage.cs" />
-    <Compile Include="Thinking\PathUtil.cs" />
-    <Compile Include="Thinking\PriorityUsage.cs" />
-    <Compile Include="Thinking\TeacherData.cs" />
-    <Compile Include="Thinking\UvSort.cs" />
-    <Compile Include="Thinking\XyzThinking.cs" />
+    <Compile Include="Problems\DoubleDangerProblem.cs" />
+    <Compile Include="Tests\DoublePerformanceTest.cs" />
+    <Compile Include="Usages\IEqualityComparerUsage.cs" />
+    <Compile Include="Tests\LinqQueryPerformanceTest.cs" />
+    <Compile Include="Tests\LinqDeferringTest.cs" />
+    <Compile Include="Usages\CustomerFormatUsage.cs" />
+    <Compile Include="Usages\DelegateUsage.cs" />
+    <Compile Include="Usages\AdvanceFuncUsage.cs" />
+    <Compile Include="Usages\HashcodeUsage.cs" />
+    <Compile Include="Usages\JsonUsage.cs" />
+    <Compile Include="Usages\OperatorUsage.cs" />
+    <Compile Include="Usages\ParameterTypeUsage.cs" />
+    <Compile Include="Usages\SemaphoreUsage.cs" />
+    <Compile Include="Tests\EndianTest.cs" />
+    <Compile Include="Problems\FibonacciSequenceProblem.cs" />
+    <Compile Include="Problems\NumTraversingProblem.cs" />
+    <Compile Include="Usages\PathUsage.cs" />
+    <Compile Include="Tests\OperationPriorityTest.cs" />
+    <Compile Include="Usages\KeyedCollectionUsage.cs" />
+    <Compile Include="Problems\UvSortingProblem.cs" />
+    <Compile Include="Problems\PrecisionMissingProblem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Data\StudentInfo.xsd">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Data\StudentInfo.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.2.6.1\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.2.6.1\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
