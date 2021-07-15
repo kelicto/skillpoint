@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace KeLi.SkillPoint.App.Usages
+namespace KeLi.SkillPoint.App.Tests
 {
     /// <summary>
     ///     Property study.

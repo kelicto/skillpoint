@@ -2,7 +2,7 @@
 using System.Collections.ObjectModel;
 using System.Linq;
 
-namespace KeLi.SkillPoint.App.Tests
+namespace KeLi.SkillPoint.App.Usages
 {
     internal class KeyedCollectionUsage : IResult
     {

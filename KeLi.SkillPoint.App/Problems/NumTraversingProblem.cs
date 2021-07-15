@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace KeLi.SkillPoint.App.Tests
+namespace KeLi.SkillPoint.App.Problems
 {
     internal class NumTraversingProblem : IResult
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace KeLi.SkillPoint.App.Usages
+namespace KeLi.SkillPoint.App.Problems
 {
     internal class RegexProblem : IResult
     {

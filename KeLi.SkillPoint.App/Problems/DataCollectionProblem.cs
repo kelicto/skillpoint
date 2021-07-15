@@ -5,7 +5,7 @@ using System.Collections.Generic;
 // ReSharper disable UseObjectOrCollectionInitializer
 // ReSharper disable ReturnValueOfPureMethodIsNotUsed
 
-namespace KeLi.SkillPoint.App.Usages
+namespace KeLi.SkillPoint.App.Problems
 {
     internal class DataCollectionProblem : IResult
     {
